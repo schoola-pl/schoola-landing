@@ -1,4 +1,4 @@
-import Document, { DocumentContext, DocumentProps, Html, Main, NextScript } from 'next/document';
+import Document, { DocumentContext, DocumentProps, Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
@@ -33,6 +33,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="pl">
+        <Head>
+          <meta name="keywords" content="landing" />
+        </Head>
         <body>
           <Main />
           <NextScript />

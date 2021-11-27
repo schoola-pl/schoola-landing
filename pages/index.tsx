@@ -7,7 +7,9 @@ const Home: NextPage = () => (
       <title>landing</title>
       <meta name="description" content="Gen" />
     </Head>
-    <button className="bg-blue-200">click me</button>
+    <button className="text-center text-indigo-400 font-bold rounded py-2 w-2/12 focus:outline-none bg-gray-900 border-2 border-indigo-400">
+      click me
+    </button>
   </>
 );
 
