@@ -8,6 +8,6 @@
       }
     ],
     "block-no-empty": null,
-    "unit-allowed-list": ["em", "rem", "s"]
+    "unit-allowed-list": ["fr", "rem", "px", "%", "s", "ms", "em", "deg", "vh", "vw"]
   }
 }
