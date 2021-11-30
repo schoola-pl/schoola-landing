@@ -1,10 +1,9 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Navbar from '../components/Navbar/Navbar';
-import SectionCTA from '../components/SectionCTA/SectionCTA';
+import Navbar from '../components/organisms/Navbar/Navbar';
 
 const Home: NextPage = () => (
   <div>
+<<<<<<< HEAD
     <Head>
       <title>Schoola Landing page</title>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,6 +14,10 @@ const Home: NextPage = () => (
       <Navbar />
       <SectionCTA />
     </div>
+=======
+    <Navbar />
+    {/* <SectionCTA /> */}
+>>>>>>> ae12a9fdfc52de1c94535ba1cac9c43ebb3720c8
   </div>
 );
 
