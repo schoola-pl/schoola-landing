@@ -4,39 +4,46 @@
 
 /* stylelint-disable-next-line at-rule-no-unknown */
 @layer base {
-  :root {
-    --color-lightBrown: #f1efe5;
-    --color-lightGreen: #e8fcd9;
-    --color-lightGrey: #f2f2f2;
-    --color-accentRed: #da6864;
-    --color-accentGreen: #55ab67;
-    --color-accentBrown: #e6e2d6;
-    --color-accentBlue: #5b75a6;
-    --color-accentGrey: #807970;
-    --color-darkBrown: #918e81;
-    --color-selectedItemGrey: #cccfdc;
-    --color-selectedItemBorderGrey: #c5c5cf;
-  }
+    :root {
+        --color-lightBrown: #f1efe5;
+        --color-lightGreen: #e8fcd9;
+        --color-lightGrey: #f2f2f2;
+        --color-accentRed: #da6864;
+        --color-accentGreen: #55ab67;
+        --color-accentBrown: #e6e2d6;
+        --color-accentBlue: #5b75a6;
+        --color-accentGrey: #807970;
+        --color-darkBrown: #918e81;
+        --color-selectedItemGrey: #cccfdc;
+        --color-selectedItemBorderGrey: #c5c5cf;
+    }
 }
 
 html {
-  font-size: 62.5%;
-  overflow-x: hidden;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
+
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
+
+:root {
+    font-size: 13px;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 a,
 button {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* .div {
