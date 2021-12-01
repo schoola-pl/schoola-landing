@@ -24,7 +24,7 @@ const Err404 = () => {
           </button>
         </div>
         <div className="max-w-lg ml-10">
-          <Image src={MessyDoodle} width={400} height={300} />
+          <Image src={MessyDoodle} width={400} height={300} alt={'Messy doodle image'} />
         </div>
       </div>
     </div>

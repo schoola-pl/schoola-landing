@@ -5,7 +5,9 @@ const Layout: React.FC = ({ children }) => {
   return (
     <>
       <Navbar />
-      {children}
+      <main aria-live={'polite'} aria-atomic={true}>
+        {children}
+      </main>
       {/*<Footer/>*/}
     </>
   );
