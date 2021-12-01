@@ -6,17 +6,17 @@ const Navbar: React.FC = () => (
     <Logo>schoola</Logo>
     <ul className="flex">
       <li>
-        <a className="p-20 transition-all text-2xl hover:text-emerald-dark" href="#">
+        <a className="p-20 transition-all text-xl hover:text-emerald-dark" href="#">
           O nas
         </a>
       </li>
       <li>
-        <a className="p-20 transition-all text-2xl hover:text-emerald-dark" href="#">
+        <a className="p-20 transition-all text-xl hover:text-emerald-dark" href="#">
           Aplikacja
         </a>
       </li>
       <li>
-        <a className="p-20 transition-all text-2xl hover:text-emerald-dark" href="#">
+        <a className="p-20 transition-all text-xl hover:text-emerald-dark" href="#">
           Kontakt
         </a>
       </li>

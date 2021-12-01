@@ -2,11 +2,15 @@ import React from 'react';
 import Navbar from '../organisms/Navbar/Navbar';
 import SectionCTA from '../organisms/SectionCTA/SectionCTA';
 
-export const Layout: React.FC = ({ children }) => {
+const Layout: React.FC = ({ children }) => {
   return (
     <>
-      <Navbar />
-      <SectionCTA />
+      <main aria-live={'polite'} aria-atomic={true}>
+        {children}
+      </main>
+      {/*<Footer/>*/}
     </>
   );
 };
+
+export default Layout;

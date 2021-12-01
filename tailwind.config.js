@@ -4,6 +4,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
+      white: '#fff',
+      black: '#000',
       amber: {
         light: '#f1efe5',
         default: '#E6E2D6',
@@ -14,7 +16,8 @@ module.exports = {
       },
       emerald: {
         light: '#E8FCD9',
-        dark: '#55AB67'
+        dark: '#55AB67',
+        darker: '#338945'
       },
       coolGray: {
         white: '#FFFFFF',
