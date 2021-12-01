@@ -1,21 +1,22 @@
-const SectionCTA = () => (
-  <div className="relative">
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-      <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span className="block">Ready to dive in?</span>
-        <span className="block text-indigo-600">Start your free trial today.</span>
-      </h2>
-      <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+import ConnectIcon from '../assets/icons/ConnectIcon.svg';
+import IconDiv from '../../atoms/IconDiv/IconDiv';
+
+const SectionCTA: React.FC = () => (
+  <div className="relative top-60 left-60 grid-cols-2">
+    <div className="flex flex-col items-start py-6 px-4 sm:px-6">
+      <h1 className="text-7xl py-6 font-extrabold tracking-tight">Lorem ipsum dolor sit amet</h1>
+      <p className="text-3xl py-10 max-w-3xl">
+        lorem ipsum dolor sit am lorem Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil omnis optio
+        cupiditate ullam cupiditate ullam cupiditate ullam cupiditate ullam
+      </p>
+      <div className="mt-10  flex content-start">
         <div className="inline-flex rounded-md shadow">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-          >
+          <button className="inline-flex items-center justify-center text-xl px-20 py-5 border border-transparent font-medium rounded-md text-emerald-dark hover:bg-emerald-dark transition-all hover:text-coolGray-white">
             Get started
-          </a>
+          </button>
         </div>
-        <div className="ml-3 inline-flex rounded-md shadow">
-          <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50">
+        <div className="ml-5 inline-flex rounded-md shadow">
+          <button className="inline-flex text-coolGray-white items-center justify-center text-xl px-20 py-5 font-medium rounded-md bg-blue-light hover:bg-opacity-0.1 transition-all">
             Learn more
           </button>
         </div>

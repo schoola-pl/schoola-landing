@@ -17,12 +17,17 @@ module.exports = {
         dark: '#55AB67'
       },
       coolGray: {
+        white: '#FFFFFF',
         light: '#f2f2f2',
         dark: '#807970'
       },
       red: {
         light: '#DA6864'
+      },
+      black: {
+        classic: '#000000'
       }
+
       // selectedItemGrey: '#CCCFDC',
       // selectedItemBorderGrey: '#C5C5CF'
     }
