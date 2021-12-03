@@ -1,6 +1,6 @@
-import { Logo } from './Navbar.styles';
 import Navigation from '../../molecules/Navigation/Navigation';
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 const Navbar: React.FC = () => {
   const [isOpen, setOpenState] = useState(false);
@@ -25,7 +25,11 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div className="flex z-50 sticky inset-0 w-screen h-24 bg-amber-default items-center justify-between shadow-md">
-        <Logo className="pl-10 md:pl-14">schoola</Logo>
+        <header>
+          <Link href="/">
+            <h1 className="pl-10 md:pl-14 cursor:pointer logo">schoola</h1>
+          </Link>
+        </header>
         <button
           onClick={toggleMenu}
           className="bg-white rounded-xl p-5 mr-10 md:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white hover:bg-emerald-dark"
