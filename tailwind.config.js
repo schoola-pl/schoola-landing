@@ -8,11 +8,13 @@ module.exports = {
       black: '#000',
       amber: {
         light: '#f1efe5',
+        medium: '#f4f3ed',
         default: '#E6E2D6',
         dark: '#918E81'
       },
       blue: {
-        light: '#5B75A6'
+        light: '#4A64A5',
+        default: '#5B75A6'
       },
       emerald: {
         light: '#E8FCD9',
