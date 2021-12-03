@@ -12,9 +12,14 @@ const Navigation: React.FC = () => {
     <nav>
       <ul className="flex">
         {routes.map((route) => (
-          <li key={route.name} className="pr-10 pl-10 mr-10 pt-5 pb-5 transition-colors text-xl cursor-pointer hover:text-emerald-dark">
-            <Link href={route.path}>{route.name}</Link>
-          </li>
+          <Link href={route.path}>
+            <li
+              key={route.name}
+              className="w-full transition-opacity text-xl cursor-pointer mx-2 py-6 px-8 text-amber-light opacity-70 hover:opacity-100 md:text-black-classic md:opacity-60"
+            >
+              {route.name}
+            </li>
+          </Link>
         ))}
       </ul>
     </nav>
