@@ -34,7 +34,9 @@ const Navbar: React.FC = () => {
           onClick={toggleMenu}
           className="bg-white rounded-xl p-5 mr-10 md:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white hover:bg-emerald-dark"
         >
-          Menu
+          <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
         </button>
         <div
           className="bg-emerald-dark transition-all absolute top-full w-screen flex align-center justify-center duration-400 md:static md:bg-amber-default md:w-auto md:mr-10"
