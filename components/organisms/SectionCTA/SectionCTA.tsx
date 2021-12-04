@@ -2,7 +2,7 @@ import ConnectIcon from 'assets/icons/ConnectIcon.svg';
 import Image from 'next/image';
 
 const SectionCTA: React.FC = () => (
-  <div className="grid left-12 relative top-16  grid-cols-2">
+  <div className="grid left-12 relative top-20  grid-cols-2">
     <div className="col-span-1">
       <div className="flex flex-col items-start py-10 px-4">
         <h1 className="text-7xl py-6 font-extrabold tracking-tight">Lorem ipsum dolor sit amet</h1>
