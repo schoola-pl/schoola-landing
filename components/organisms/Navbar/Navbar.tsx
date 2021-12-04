@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
+    setFlags();
     window.addEventListener('resize', setFlags);
     return () => window.removeEventListener('resize', setFlags);
   }, []);
