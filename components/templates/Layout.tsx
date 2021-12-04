@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from 'components/organisms/Navbar/Navbar';
+import Footer from '../organisms/Footer/Footer';
 
 const Layout: React.FC = ({ children }) => {
   return (
@@ -8,7 +9,7 @@ const Layout: React.FC = ({ children }) => {
       <main aria-live={'polite'} aria-atomic={true}>
         {children}
       </main>
-      {/*<Footer/>*/}
+      <Footer />
     </>
   );
 };
