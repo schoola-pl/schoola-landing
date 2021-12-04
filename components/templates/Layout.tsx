@@ -7,7 +7,7 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Navbar />
       <main aria-live={'polite'} aria-atomic={true}>
-        {children}
+        <div style={{ minHeight: 'calc(100vh - 78px)' }}>{children}</div>
       </main>
       <Footer />
     </>

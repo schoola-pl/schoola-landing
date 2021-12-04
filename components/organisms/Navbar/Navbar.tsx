@@ -43,6 +43,7 @@ const Navbar: React.FC = () => {
         style={{
           boxShadow: isMobile ? 'inset 0 2px 10px -5px #000' : 'none',
           opacity: isOpen ? 1 : 0,
+          pointerEvents: isOpen ? 'unset' : 'none',
           transform: `translateY(${isOpen ? '0' : '100%'})`
         }}
         aria-expanded={isOpen}
