@@ -33,7 +33,7 @@ const team = [
   {
     name: 'Kuba Junak',
     role: 'Marketing & SEO Manager',
-    description: 'Lorem ipsum dolor sit',
+    description: 'Za dnia palacz cameli niebieskich, zaś w nocy czynny konsument pornografii',
     img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.6435-1/p200x200/86971366_560816111178711_639843044979376128_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=GrptFGgX_zwAX-ewT0A&_nc_ht=scontent.fwaw7-1.fna&oh=d20205c113448adc789fc02f6ad97ca5&oe=61D38181',
     socials: {
       github: null,
@@ -71,7 +71,7 @@ const team = [
 const about = () => {
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-2 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
+      <section className="grid grid-cols-1 md:hidden relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
         <div className="bg-amber-dark">
           <img
             className="w-screen h-full object-cover object-top opacity-60"
@@ -98,7 +98,7 @@ const about = () => {
           </div>
         </div>
       </section>
-      <section className="w-screen px-4 md:grid md:grid-cols-2 sm:px-6 lg:px-4 py-12 bg-amber-light relative">
+      <section className="w-screen px-4 md:grid md:grid-cols-2 sm:px-6 lg:px-4 py-12 2xl:h-screen bg-amber-light relative">
         <div className="text-center pb-12 md:pl-10">
           <h2 className="text-base font-bold text-indigo-600 md:text-left">
             Chcemy razem zmienić świat na lepsze, w tym szkoły<span className="text-emerald-dark">.</span>
@@ -110,12 +110,7 @@ const about = () => {
             <p className="px-5 my-3 md:py-8 md:px-8 md:mt-6 text-justify md:leading-relaxed md:bg-white md:mr-10 md:border-emerald-dark md:border-l-4 text-lg relative z-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lacinia nibh. Integer sagittis, tortor eu lacinia feugiat, nisl
               velit placerat massa, nec suscipit orci turpis at metus. Duis mollis libero vitae magna cursus porta. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae; Aliquam et consectetur urna. Sed est velit, ultrices eu rutrum eget, tristique
-              sit amet dui. Morbi eu nunc vulputate dolor dignissim tincidunt. Proin et ligula porttitor, egestas ipsum quis, sagittis enim.
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus vulputate interdum turpis eu
-              iaculis. Quisque orci felis, elementum non congue sed, pulvinar et ante. Nullam ligula nisi, bibendum vitae rutrum vitae, sagittis ac
-              nulla. Proin pretium augue sit amet vestibulum eleifend. Curabitur non massa erat. Fusce dapibus massa sit amet nulla fermentum
-              interdum.
+              faucibus orci luctus et ultrices posuere cubilia curae;
             </p>
           </article>
           <div className="opacity-0 absolute left-10 bottom-8  md:opacity-50">
@@ -126,9 +121,9 @@ const about = () => {
           {team.map((person) => (
             <div
               tabIndex={1}
-              className="w-full bg-amber-dark rounded-lg text-coolGray-light drop-shadow-lg md:opacity-90 md:transition-opacity hover:opacity-100 focus:opacity-100 flex flex-col md:flex-row"
+              className="w-full bg-amber-dark rounded-lg z-20 overflow-hidden text-coolGray-light drop-shadow-lg md:opacity-90 md:transition-opacity hover:opacity-100 focus:opacity-100 flex flex-col md:flex-row"
             >
-              <div className="w-full md:w-2/5 h-80">
+              <div className="w-full  md:w-2/5 h-full">
                 <img className="object-center object-cover w-full h-full" src={person.img} alt={`${person.name}'s photo`} />
               </div>
               <div className="w-full md:w-3/5 text-left p-4 md:p-4 space-y-2">

@@ -11,12 +11,12 @@ const SectionCTA: React.FC = () => (
       </p>
       <div className="mt-10 2xl:mt-20 flex content-start">
         <div className="inline-flex rounded-md shadow">
-          <button className="inline-flex items-center justify-center text-m px-10 py-5 sm:px-16 md:px-12 2xl:px-20 border border-transparent 2xl:text-xl font-medium rounded-md text-emerald-dark hover:bg-emerald-dark transition-all hover:text-coolGray-white hover:border-emerald-dark">
+          <button className="inline-flex items-center justify-center text-m px-10 py-5 sm:px-16 md:px-12 2xl:px-20 border border-transparent xl:text-xl font-medium rounded-md text-emerald-dark hover:bg-emerald-dark transition-all hover:text-coolGray-white hover:border-emerald-dark">
             Get started
           </button>
         </div>
         <div className="ml-5 inline-flex rounded-md shadow">
-          <button className="inline-flex text-coolGray-white relative items-center justify-center text-m px-10 py-5 sm:px-16 md:px-12 2xl:px-20 2xl:text-xl  font-medium rounded-md bg-blue-default hover:bg-blue-light  transition-all">
+          <button className="inline-flex text-coolGray-white relative items-center justify-center text-m px-10 py-5 sm:px-16 md:px-12 2xl:px-20 xl:text-xl  font-medium rounded-md bg-blue-default hover:bg-blue-light  transition-all">
             Learn more
           </button>
         </div>
