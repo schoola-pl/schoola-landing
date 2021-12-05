@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Err404 = () => {
   return (
-    <div className="h-full pt-10 md:pt-0 w-screen bg-gray-100 flex items-center justify-center">
+    <div style={{ minHeight: 'calc(100vh - 78px)' }} className="pt-10 py-8 md:py-0 md:pt-0 w-screen bg-gray-100 flex items-center justify-center">
       <div className="container flex flex-col-reverse md:flex-row items-center justify-center px-5 text-gray-700">
         <div className="max-w-md mt-10 md:mt-0">
           <div className="text-7xl font-dark font-bold">404</div>
