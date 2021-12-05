@@ -2,7 +2,10 @@
 const { withSentryConfig } = require('@sentry/nextjs');
 
 const moduleExports = {
-  reactStrictMode: true
+  reactStrictMode: true,
+  images: {
+    domains: ['scontent.fwaw7-1.fna.fbcdn.net', 'avatars.githubusercontent.com']
+  }
 };
 
 const sentryWebpackPluginOptions = {

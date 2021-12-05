@@ -38,7 +38,11 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      gridTemplateColumns: {
+        about: '60% 40%'
+      }
+    }
   },
   plugins: []
 };
