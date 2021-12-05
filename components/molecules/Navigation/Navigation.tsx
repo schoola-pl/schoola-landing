@@ -15,7 +15,7 @@ const Navigation: React.FC = () => {
           <Link href={route.path}>
             <li
               key={route.name}
-              className="w-full transition-opacity text-xl cursor-pointer mx-2 py-6 px-8 text-amber-light opacity-70 hover:opacity-100 md:text-black-classic md:opacity-60"
+              className="w-full transition-opacity text-lg cursor-pointer mx-2 py-6 px-8 text-amber-light opacity-70 hover:opacity-100 md:text-black-classic md:opacity-60"
             >
               {route.name}
             </li>

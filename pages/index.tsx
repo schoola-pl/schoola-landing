@@ -5,7 +5,7 @@ import ProblemSection from '../components/organisms/ProblemSection/ProblemSectio
 const Home: NextPage = () => (
   <>
     <SectionCTA />
-    {/* <ProblemSection /> */}
+    <ProblemSection />
   </>
 );
 
