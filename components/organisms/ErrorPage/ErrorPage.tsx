@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import MessyDoodle from 'assets/images/MessyDoodle.png';
+import Error from 'assets/icons/Error.svg';
 
 interface props {
   title: string;
@@ -28,7 +28,7 @@ const ErrorPage: React.FC<props> = ({ title, description, btnContent, func, errN
           </button>
         </div>
         <div className="max-w-lg ml-10">
-          <Image src={MessyDoodle} width={400} height={300} alt={'Messy doodle image'} />
+          <Image src={Error} width={400} height={300} alt={'Messy doodle image'} />
         </div>
       </div>
     </div>
