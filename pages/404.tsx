@@ -14,7 +14,7 @@ const Err404 = () => {
 
           <Link href={'/'}>
             <button
-              className="px-10 inline py-6 text-sm font-medium leading-5 shadow text-white transition-colors duration-150 border border-transparent rounded-lg focus:outline-none focus:shadow-outline-blue bg-emerald-dark
+              className="px-10 inline py-6 font-medium leading-5 shadow text-white transition-colors duration-150 rounded-lg focus:outline-none focus:shadow-outline-blue bg-emerald-dark
            active:bg-emerald-darker hover:bg-emerald-darker text-xl md:px-6 md:py-4"
             >
               No i do domku!
