@@ -71,15 +71,15 @@ const team = [
 const about = () => {
   return (
     <>
-      <section className="grid grid-cols-1 md:hidden relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
-        <div className="bg-amber-dark">
+      <section className="grid grid-cols-1 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
+        <div className="bg-amber-dark md:hidden">
           <img
             className="w-screen h-full object-cover object-top opacity-60"
             src="https://st2.depositphotos.com/1037987/5934/i/950/depositphotos_59345825-stock-photo-group-of-high-school-students.jpg"
             alt=""
           />
         </div>
-        <div className="flex bg-gray-100 p-10">
+        <div className="flex bg-gray-100 p-10 md:flex md:items-center md:justify-center md:px-48 lg:px-56">
           <div className="mb-auto mt-auto ">
             <h1 className="text-5xl md:text-6xl uppercase relative z-10">
               Schoola<span className="text-emerald-dark">.</span> Team
@@ -87,14 +87,14 @@ const about = () => {
             <p className="font-semibold mb-5 text-xl md:text-2xl text-emerald-dark opacity-80 relative z-10">
               Pracujemy dla dobra naszych rówieśników
             </p>
-            <p className="pr-10 md:pr-20 text-justify md:text-left relative z-10">
+            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-1/2 md:pr-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lacinia nibh. Integer sagittis, tortor eu lacinia feugiat, nisl
               velit placerat massa, nec suscipit orci turpis at metus. Duis mollis libero vitae magna cursus porta. Vestibulum ante ipsum primis in
               faucibus orci luctus et ultrices posuere cubilia curae; Aliquam et consectetur urna.
             </p>
-            <div className="opacity-0 absolute right-8 bottom-8 md:opacity-50">
-              <Image src={Sprint} width={600} height={500} alt={'Team SVG'} />
-            </div>
+          </div>
+          <div className="opacity-0 absolute right-8 bottom-8 md:opacity-60 md:right-52 md:top-52 md:pl-52">
+            <Image src={Sprint} width={700} height={600} alt={'Team SVG'} />
           </div>
         </div>
       </section>
