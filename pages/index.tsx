@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import SectionCTA from 'components/organisms/SectionCTA/SectionCTA';
-import ProblemSection from '../components/organisms/ProblemSection/ProblemSection';
+import ProblemSection from '../components/organisms/AppIntroductionSection/AppIntroductionSection';
 
 const Home: NextPage = () => (
   <>
