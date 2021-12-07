@@ -1,5 +1,6 @@
 import ConnectIcon from 'assets/icons/ConnectIcon.svg';
 import Image from 'next/image';
+import React from 'react';
 
 const SectionCTA: React.FC = () => (
   <div className="h-full flex items-center justify-center flex-col-reverse md:flex-row px-5 md:px-3">
