@@ -34,7 +34,7 @@ const team = [
     name: 'Kuba Junak',
     role: 'Marketing & SEO Manager',
     description: 'Za dnia palacz cameli niebieskich, zaś w nocy czynny konsument pornografii',
-    img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.6435-1/p200x200/86971366_560816111178711_639843044979376128_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=GrptFGgX_zwAX-ewT0A&_nc_ht=scontent.fwaw7-1.fna&oh=d20205c113448adc789fc02f6ad97ca5&oe=61D38181',
+    img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-1/p200x200/264673352_957377688189216_2443246515182621220_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=K54i-3fyLSAAX-FtgTk&_nc_ht=scontent.fwaw7-1.fna&oh=930506c2e7b02df069fbbbc71e5cdf02&oe=61B3FC5F',
     socials: {
       github: null,
       twitter: null,
