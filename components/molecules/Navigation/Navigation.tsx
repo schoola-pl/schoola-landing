@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import React from 'react';
+import NavLink from '../../atoms/NavLink/NavLink';
 
 const routes = [
   { name: 'O nas', path: '/about' },
@@ -12,14 +12,7 @@ const Navigation: React.FC = () => {
     <nav>
       <ul className="flex">
         {routes.map((route) => (
-          <Link href={route.path}>
-            <li
-              key={route.name}
-              className="w-full transition-opacity text-lg cursor-pointer mx-2 py-6 px-8 text-amber-light opacity-70 hover:opacity-100 md:text-black-classic md:opacity-60"
-            >
-              {route.name}
-            </li>
-          </Link>
+          <NavLink route={route} key={route.name} />
         ))}
       </ul>
     </nav>
