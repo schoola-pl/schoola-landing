@@ -87,7 +87,7 @@ const about = () => {
             <p className="font-semibold mb-5 text-lg md:text-xl lg:text-2xl xl:text-3xl text-emerald-dark opacity-80 relative z-10">
               Pracujemy dla dobra naszych rówieśników
             </p>
-            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 md:pr-0">
+            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 lg:text-lg md:pr-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lacinia nibh. Integer sagittis, tortor eu lacinia feugiat, nisl
               velit placerat massa, nec suscipit orci turpis at metus. Duis mollis libero vitae magna cursus porta. Vestibulum ante ipsum primis in
               faucibus orci luctus et ultrices posuere cubilia curae; Aliquam et consectetur urna.
