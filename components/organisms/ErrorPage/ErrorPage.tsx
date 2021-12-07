@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Error from 'assets/icons/Error.svg';
+import { useRouter } from 'next/router';
 
 interface props {
   title: string;
@@ -11,8 +12,29 @@ interface props {
 }
 
 const ErrorPage: React.FC<props> = ({ title, description, btnContent, func, errNumber }) => {
+  const [seconds, setSeconds] = useState(10);
+  const { replace } = useRouter();
+
+  useEffect(() => {
+    if (seconds === 0) replace('/');
+  }, [seconds]);
+
+  useEffect(() => {
+    if (errNumber === 404) {
+      const timer = setInterval(() => {
+        setSeconds((r) => --r);
+      }, 1000);
+      return () => clearInterval(timer);
+    }
+  }, [errNumber]);
+
   return (
     <div style={{ minHeight: 'calc(100vh - 78px)' }} className="pt-10 py-8 md:py-0 md:pt-0 w-screen bg-gray-100 flex items-center justify-center">
+      {errNumber === 404 && (
+        <p className="fixed top-24 left-1/2 text-white -translate-x-1/2 font-bold bg-emerald-dark px-16 py-5 rounded-b-xl">
+          Przekierowanie za {seconds} sekund
+        </p>
+      )}
       <div className="container flex flex-col-reverse md:flex-row items-center justify-center px-5 text-gray-700">
         <div className="max-w-md mt-10 md:mt-0">
           <div className="text-7xl font-dark font-bold">{errNumber}</div>
