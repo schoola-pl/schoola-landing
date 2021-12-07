@@ -79,21 +79,21 @@ const about = () => {
             alt=""
           />
         </div>
-        <div className="flex bg-gray-100 p-10 md:flex md:items-center md:justify-center md:px-48 lg:px-56">
+        <div className="flex bg-gray-100 relative p-10 md:flex md:items-center md:justify-center md:px-20 lg:px-40 xl:px-56">
           <div className="mb-auto mt-auto ">
-            <h1 className="text-5xl md:text-6xl uppercase relative z-10">
+            <h1 className="text-5xl md:text-4xl lg:text-5xl xl:text-6xl uppercase relative z-10">
               Schoola<span className="text-emerald-dark">.</span> Team
             </h1>
-            <p className="font-semibold mb-5 text-xl md:text-2xl text-emerald-dark opacity-80 relative z-10">
+            <p className="font-semibold mb-5 text-lg md:text-xl lg:text-2xl xl:text-3xl text-emerald-dark opacity-80 relative z-10">
               Pracujemy dla dobra naszych rówieśników
             </p>
-            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-1/2 md:pr-0">
+            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 md:pr-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lacinia nibh. Integer sagittis, tortor eu lacinia feugiat, nisl
               velit placerat massa, nec suscipit orci turpis at metus. Duis mollis libero vitae magna cursus porta. Vestibulum ante ipsum primis in
               faucibus orci luctus et ultrices posuere cubilia curae; Aliquam et consectetur urna.
             </p>
           </div>
-          <div className="opacity-0 absolute right-8 bottom-8 md:opacity-60 md:right-52 md:top-52 md:pl-52">
+          <div className="opacity-0 absolute right-0 bottom-8 md:opacity-50 md:right-52 md:top-52 md:pl-60 xl:right-10">
             <Image src={Sprint} width={700} height={600} alt={'Team SVG'} />
           </div>
         </div>
