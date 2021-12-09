@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const NewsletterForm = ({ onValidated }) => {
+const NewsletterForm = ({ onValidated: any }) => {
   const [email, setEmail] = useState(null);
   const emailRef = useRef<HTMLInputElement>(null);
 
