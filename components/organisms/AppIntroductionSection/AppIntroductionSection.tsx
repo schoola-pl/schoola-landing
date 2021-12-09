@@ -5,7 +5,7 @@ const AppIntroductionSection = () => (
     <h1 className="font-bold text-3xl pt-6 pb-4 text-gray-900 sm:text-4xl md:pb-16 2xl:text-5xl">
       Cała szkoła w jednej aplikacji<span className="text-emerald-dark">.</span>
     </h1>
-    <div className="grid col-span-1 grid-rows-3 gap-y-2.5 place-items-center md:grid-cols-3 md:grid-rows-1 ">
+    <div className="grid col-span-1 grid-rows-3 gap-y-2.5 md:gap-10 place-items-center md:grid-cols-3 md:grid-rows-1 ">
       <div className="m-1">
         <div className="flex justify-center items-center m-3">
           <div className="h-28 w-28 overflow-hidden flex justify-center items-center border  border-emerald-dark rounded-full bg-emerald-dark">
