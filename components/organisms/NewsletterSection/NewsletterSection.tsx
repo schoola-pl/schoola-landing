@@ -1,34 +1,18 @@
-import React, { useRef, useState } from 'react';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import NewsletterForm from 'components/molecules/NewsletterForm/NewsletterForm';
 
-const NewsletterSection = () => {
-  const [email, setEmail] = useState();
-  const emailRef = useRef<HTMLDivElement>('');
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const emailInfo = emailRef.current.value;
-    try {
-      setEmail(emailInfo);
-      console.log(email);
-    } catch (e) {
-      console.log(e);
-    }
-  };
+const NewsletterSubscribe = () => {
+  const MAILCHIMP_URL = 'https://gmail.us20.list-manage.com/subscribe/post?u=37d42ea39057bd19a6e145ae5&amp;id=fe551fe5a1';
 
   return (
-    <div className="mb-10 flex flex-col">
-      <h1 className="text-center font-semibold mb-2 text-lg">Zapisz się na nasz newsletter!</h1>
-      <form onSubmit={handleSubmit} className="flex justify-center ">
-        <input ref={emailRef} className="font-medium w-30 px-2 py-5 mr-2 rounded-md border-2 border-emerald-dark transition-all" type="email" />
-        <button
-          type="submit"
-          className="font-medium px-10 py-5 rounded-md bg-blue-default transition-all text-coolGray-white hover:border-coolGray-white"
-        >
-          Click
-        </button>
-      </form>
-    </div>
+    <MailchimpSubscribe
+      url={MAILCHIMP_URL}
+      render={(props: any) => {
+        const { subscribe } = props || {};
+        return <NewsletterForm onValidated={(formData: any) => subscribe(formData)} />;
+      }}
+    />
   );
 };
 
-export default NewsletterSection;
+export default NewsletterSubscribe;
