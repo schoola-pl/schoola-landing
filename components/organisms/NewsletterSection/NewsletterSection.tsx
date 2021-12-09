@@ -1,4 +1,4 @@
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
 import NewsletterForm from 'components/molecules/NewsletterForm/NewsletterForm';
 
 const NewsletterSubscribe = () => {
@@ -7,9 +7,8 @@ const NewsletterSubscribe = () => {
   return (
     <MailchimpSubscribe
       url={MAILCHIMP_URL}
-      render={(props: any) => {
-        const { subscribe } = props || {};
-        return <NewsletterForm onValidated={(formData: any) => subscribe(formData)} />;
+      render={({ subscribe }) => {
+        return <NewsletterForm onValidated={(formData: EmailFormFields) => subscribe(formData)} />;
       }}
     />
   );

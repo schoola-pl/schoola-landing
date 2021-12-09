@@ -1,14 +1,18 @@
-import { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { EmailFormFields } from 'react-mailchimp-subscribe';
 
-const NewsletterForm: React.FC = ({ onValidated }) => {
-  const [email, setEmail] = useState('');
+interface props {
+  onValidated: (fields: EmailFormFields) => void;
+}
+
+const NewsletterForm: React.FC<props> = ({ onValidated }) => {
+  const [email, setEmail] = useState<string | undefined>('');
   const emailRef = useRef<HTMLInputElement>(null);
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmail(emailRef.current?.value);
-    const formEmail = onValidated({ EMAIL: email });
-    return formEmail;
+    return onValidated({ EMAIL: email || '' });
   };
 
   return (
