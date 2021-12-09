@@ -1,0 +1,13 @@
+.contact-quote-enter {
+    opacity: 0;
+}
+
+.contact-quote-enter-active {
+    opacity: .9;
+    transition: opacity 300ms ease-in;
+}
+
+.contact-quote-exit {
+    opacity: 0;
+    transition: opacity 300ms ease-out;
+}
