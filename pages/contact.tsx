@@ -1,8 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Support from 'assets/icons/Support.svg';
 import Image from 'next/image';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
+const items = [
+  {
+    id: 1,
+    image:
+      'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.6435-1/c0.18.200.200a/p200x200/186173524_1497571507248720_2353136923100118796_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=7206a8&_nc_ohc=9gEzuHg3gzwAX-78ve7&_nc_ht=scontent.fwaw7-1.fna&oh=dbfc4c293aa4e95849f35a84335df844&oe=61D1826D',
+    text: 'Lorem ipsum'
+  },
+  {
+    id: 2,
+    image: 'https://avatars.githubusercontent.com/u/77537823?v=4',
+    text: 'W budowę tej aplikacji włożyłem całe swoje serce. Jeżeli tylko chesz się dowiedzieć czegoś na jej temat - jestem otwarty na rozmowy!'
+  },
+  {
+    id: 3,
+    image:
+      'https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-1/p200x200/264673352_957377688189216_2443246515182621220_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=K54i-3fyLSAAX-FtgTk&_nc_ht=scontent.fwaw7-1.fna&oh=930506c2e7b02df069fbbbc71e5cdf02&oe=61B3FC5F',
+    text: 'Lorem ipsum'
+  },
+  {
+    id: 4,
+    image: 'https://avatars.githubusercontent.com/u/77537823?v=4',
+    text: 'Lorem ipsum'
+  },
+  {
+    id: 5,
+    image:
+      'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=4MbBEWsUWU0AX8YCvUy&_nc_ht=scontent.fwaw7-1.fna&oh=5b207360ce8071f79890b403046e685c&oe=61D14C78',
+    text: 'Lorem ipsum'
+  }
+];
 
 const contact = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      setIndex((prev) => (prev === items.length - 1 ? 0 : ++prev));
+    }, 6300);
+  }, []);
+
   return (
     <>
       <div className="flex items-center justify-center p-0 md:p-12 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
@@ -63,24 +103,28 @@ const contact = () => {
               </button>
             </div>
           </div>
-          <div
-            className="flex md:justify-end w-full mb-10 md:w-auto -mt-5 md:absolute md:right-20 top-50 md:opacity-80 hidden md:block lg:right-52 lg:opacity-90"
-            style={{ zIndex: '-1' }}
-          >
-            <div className=" bg-dots">
-              <div className=" shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
-                <img alt=" card img" className=" rounded-t" src=" https://avatars.githubusercontent.com/u/77537823?v=4" />
-                <div className="text-2xl p-10 bg-white">
-                  <img
-                    alt="quote"
-                    className="float-left mr-3"
-                    src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg"
-                  />
-                  W budowę tej aplikacji włożyłem całe swoje serce. Jeżeli tylko chesz się dowiedzieć czegoś na jej temat - jestem otwarty na rozmowy!
+          <TransitionGroup>
+            <CSSTransition key={items[index].id} timeout={300} classNames="contact-quote">
+              <div
+                className="flex md:justify-end w-full mb-10 md:w-auto -mt-5 md:absolute md:right-20 md:opacity-80 hidden md:block lg:right-52 lg:opacity-90"
+                style={{ zIndex: '-1', top: '10rem' }}
+              >
+                <div className=" bg-dots">
+                  <div className=" shadow-2xl max-w-md z-10 rounded-full mt-6 ml-4">
+                    <img alt="card img" style={{ width: '400px' }} className="rounded-t" src={items[index].image} />
+                    <div className="text-2xl p-10 bg-white">
+                      <img
+                        alt="quote"
+                        className="float-left mr-3"
+                        src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg"
+                      />
+                      {items[index].text}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </CSSTransition>
+          </TransitionGroup>
         </div>
       </div>
 
