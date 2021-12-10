@@ -13,7 +13,7 @@ const NewsletterForm: React.FC<props> = ({ onValidated }) => {
     e.preventDefault();
 
     setEmail(emailRef.current?.value);
-    return onValidated({ EMAIL: email || '' }), alert('Zapisano!'), (emailRef.current.value = '');
+    return onValidated({ EMAIL: email || '' }), alert('Zapisano!'), (emailRef.current!.value = '');
   };
 
   return (
