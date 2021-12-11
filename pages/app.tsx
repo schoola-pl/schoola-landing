@@ -135,7 +135,6 @@ const app = () => {
             Sprawdź co będzie potrafić nasza aplikacja i już dzisiaj zapisz się na listę oczekujących osób do wersji alpha!
           </p>
         </header>
-        <NewsletterSection withoutDescription />
       </div>
 
       <article className="bg-coolGray-light py-10">
@@ -208,6 +207,7 @@ const app = () => {
             </div>
           </section>
         </div>
+        <NewsletterSection withoutDescription />
       </article>
     </article>
   );
