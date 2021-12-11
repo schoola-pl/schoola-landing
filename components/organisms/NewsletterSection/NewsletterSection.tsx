@@ -1,14 +1,17 @@
 import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
 import NewsletterForm from 'components/molecules/NewsletterForm/NewsletterForm';
+import React from 'react';
 
-const NewsletterSubscribe = () => {
+const NewsletterSubscribe: React.FC<{ withoutDescription: boolean }> = ({ withoutDescription }) => {
   const MAILCHIMP_URL = 'https://gmail.us20.list-manage.com/subscribe/post?u=37d42ea39057bd19a6e145ae5&amp;id=fe551fe5a1';
 
   return (
     <MailchimpSubscribe
       url={MAILCHIMP_URL}
       render={({ subscribe, status }) => {
-        return <NewsletterForm onValidated={(formData: EmailFormFields) => subscribe(formData)} status={status} />;
+        return (
+          <NewsletterForm withoutDescription={withoutDescription} onValidated={(formData: EmailFormFields) => subscribe(formData)} status={status} />
+        );
       }}
     />
   );

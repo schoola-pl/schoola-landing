@@ -5,9 +5,10 @@ import { useForm } from 'react-hook-form';
 interface props {
   onValidated: (fields: EmailFormFields) => void;
   status: string | null;
+  withoutDescription: boolean;
 }
 
-const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
+const NewsletterForm: React.FC<props> = ({ onValidated, status, withoutDescription }) => {
   const [isSubscribed, setSubscribeState] = useState(false);
 
   const {
@@ -35,17 +36,21 @@ const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
   }, [status]);
 
   return (
-    <div className="mb-10 flex flex-col md:my-20">
-      <h1 className="text-center font-semibold mb-3 text-xl md:text-3xl md:mb-5">
-        {!isSubscribed ? (
-          'Zapisz się na nasz newsletter!'
-        ) : (
-          <span>
-            <span className="text-emerald-dark">Zapisałeś się</span> już na nasz newsletter!
-          </span>
-        )}
-      </h1>
-      <p className="text-center mb-3 sm:mb-5 text-md md:text-lg">OPIS NEWSLETTERA w trzech zdaniach, Lorem ipsum dolor sit, amet</p>
+    <div className={`mb-10 flex flex-col md:my-20 ${!withoutDescription ? null : 'md:my-10 my-4'}`}>
+      {!withoutDescription ? (
+        <>
+          <h1 className="text-center font-semibold mb-3 text-xl md:text-3xl md:mb-5">
+            {!isSubscribed ? (
+              'Zapisz się na nasz newsletter!'
+            ) : (
+              <span>
+                <span className="text-emerald-dark">Zapisałeś się</span> już na nasz newsletter!
+              </span>
+            )}
+          </h1>
+          <p className="text-center mb-3 sm:mb-5 text-md md:text-lg">OPIS NEWSLETTERA w trzech zdaniach, Lorem ipsum dolor sit, amet</p>
+        </>
+      ) : null}
       <form onSubmit={handleSubmit(newsletterHandler)} className="flex justify-center mx-3">
         <div className="md:w-3/6 max-w-xl">
           <input
