@@ -7,8 +7,8 @@ const NewsletterSubscribe = () => {
   return (
     <MailchimpSubscribe
       url={MAILCHIMP_URL}
-      render={({ subscribe, status, message }) => {
-        return <NewsletterForm onValidated={(formData: EmailFormFields) => subscribe(formData)} status={status} message={message} />;
+      render={({ subscribe, status }) => {
+        return <NewsletterForm onValidated={(formData: EmailFormFields) => subscribe(formData)} status={status} />;
       }}
     />
   );

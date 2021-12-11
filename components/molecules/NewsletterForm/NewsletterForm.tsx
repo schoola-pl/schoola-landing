@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 
 interface props {
   onValidated: (fields: EmailFormFields) => void;
-  status: string;
+  status: string | null;
 }
 
 const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
@@ -44,6 +44,7 @@ const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
             <span className="text-emerald-dark">Zapisałeś się</span> już na nasz newsletter!
           </span>
         )}
+        `
       </h1>
       <p className="text-center mb-3 sm:mb-5 text-md md:text-lg">OPIS NEWSLETTERA w trzech zdaniach, Lorem ipsum dolor sit, amet</p>
       <form onSubmit={handleSubmit(newsletterHandler)} className="flex justify-center mx-3">
@@ -52,6 +53,7 @@ const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
             type="email"
             placeholder="example@mail.com"
             className="font-medium px-5 w-full py-5 mr-3 rounded-md border-2 border-emerald-dark transition-all"
+            disabled={isSubscribed}
             {...register('email', {
               required: true,
               pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -68,7 +70,7 @@ const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
             ? 'Wysyłanie...'
             : status === 'error' || errors.email
             ? 'Spróbuj ponownie!'
-            : status === 'success'
+            : status === 'success' || isSubscribed
             ? 'Zapisano!'
             : 'Zapisz się'}
         </button>
