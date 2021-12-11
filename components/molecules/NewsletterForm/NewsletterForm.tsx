@@ -44,7 +44,6 @@ const NewsletterForm: React.FC<props> = ({ onValidated, status }) => {
             <span className="text-emerald-dark">Zapisałeś się</span> już na nasz newsletter!
           </span>
         )}
-        `
       </h1>
       <p className="text-center mb-3 sm:mb-5 text-md md:text-lg">OPIS NEWSLETTERA w trzech zdaniach, Lorem ipsum dolor sit, amet</p>
       <form onSubmit={handleSubmit(newsletterHandler)} className="flex justify-center mx-3">
