@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Support from 'assets/icons/Support.svg';
+import Support from 'public/icons/Support.svg';
 import Image from 'next/image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Instagram from 'public/icons/Instagram.svg';
+import Facebook from 'public/icons/Facebook.svg';
 
 const items = [
   {
@@ -13,7 +15,7 @@ const items = [
   {
     id: 2,
     image: 'https://avatars.githubusercontent.com/u/77537823?v=4',
-    text: 'W budowę tej aplikacji włożyłem całe swoje serce. Jeżeli tylko chesz się dowiedzieć czegoś na jej temat - jestem otwarty na rozmowy!'
+    text: 'Jestem jednym z programistów budujących aplikację. Jeżeli masz pytania, problemy lub jakieś pomysły - pisz śmiało!'
   },
   {
     id: 3,
@@ -137,22 +139,22 @@ const contact = () => {
               </h1>
             </div>
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+              <input className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder="Imię*" />
               <input
                 className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
-                placeholder="First Name*"
-              />
-              <input
-                className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder="Last Name*"
+                placeholder="Nazwisko*"
               />
               <input className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline" type="email" placeholder="Email*" />
-              <input className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline" type="number" placeholder="Phone" />
+              <input
+                className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                type="number"
+                placeholder="Telefon"
+              />
             </div>
             <div className="my-4">
               <textarea
-                placeholder="Message*"
+                placeholder="Treść wiadomości*"
                 className="w-full h-32 bg-coolGray-light mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
               ></textarea>
             </div>
@@ -161,7 +163,7 @@ const contact = () => {
                 className="uppercase text-sm font-bold tracking-wide bg-blue-default transition-colors text-white text-gray-100 p-3 hover:bg-blue-light rounded-lg w-full
                       focus:outline-none focus:shadow-outline"
               >
-                Send Message
+                Wyślij
               </button>
             </div>
           </div>
@@ -179,17 +181,14 @@ const contact = () => {
                   <i className="fas fa-map-marker-alt pt-2 pr-2" />
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-2xl">Address</h2>
-                  <p className="text-gray-400">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
+                  <h2 className="text-2xl">Napisz mail'a</h2>
+                  <p className="text-gray-400">email@email.com</p>
                 </div>
               </div>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
                 <div className="flex flex-col">
-                  <i className="fas fa-phone-alt pt-2 pr-2" />
-                </div>
-                <div className="flex flex-col">
-                  <h2 className="text-2xl">Call Us</h2>
+                  <h2 className="text-2xl">Zadzwoń do nas</h2>
                   <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
                   <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
                 </div>
@@ -197,20 +196,24 @@ const contact = () => {
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
                 <a
-                  href="https://www.facebook.com/ENLIGHTENEERING/"
+                  href="https://www.linkedin.com/company/enlighteneering-inc-"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1"
+                  className="rounded-full bg-white w-10 h-10 flex items-center mx-1 justify-center"
                 >
-                  FB
+                  <div className="mx-2 mt-2">
+                    <Image src={Facebook} />
+                  </div>
                 </a>
                 <a
                   href="https://www.linkedin.com/company/enlighteneering-inc-"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full bg-white h-8 w-8 inline-block mx-1 text-center pt-1"
+                  className="rounded-full bg-white w-10 h-10 flex items-center mx-1 justify-center"
                 >
-                  FB
+                  <div className="mx-2 mt-2">
+                    <Image src={Instagram} />
+                  </div>
                 </a>
               </div>
             </div>
