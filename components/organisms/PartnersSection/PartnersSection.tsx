@@ -1,6 +1,6 @@
 import React from 'react';
-import BankIcon from 'assets/icons/BankIcon.webp';
-import FundIcon from 'assets/icons/FundacjaBgk.png';
+import BankIcon from 'public/icons/BankIcon.webp';
+import FundIcon from 'public/icons/FundacjaBgk.png';
 import Image from 'next/image';
 
 const PartnersSection = () => (

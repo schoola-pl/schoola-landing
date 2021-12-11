@@ -1,8 +1,8 @@
 import Link from 'next/dist/client/link';
 import React from 'react';
 import Image from 'next/image';
-import Team from 'assets/icons/Team.svg';
-import Sprint from 'assets/icons/Sprint.svg';
+import Team from 'public/icons/Team.svg';
+import Sprint from 'public/icons/Sprint.svg';
 
 const team = [
   {

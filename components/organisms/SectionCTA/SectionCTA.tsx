@@ -1,4 +1,4 @@
-import ConnectIcon from 'assets/icons/ConnectIcon.svg';
+import ConnectIcon from 'public/icons/ConnectIcon.svg';
 import Image from 'next/image';
 import React from 'react';
 
