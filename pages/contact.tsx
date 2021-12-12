@@ -195,18 +195,13 @@ const contact = () => {
               </div>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
-                <a
-                  href="https://www.linkedin.com/company/enlighteneering-inc-"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full bg-white w-10 h-10 flex items-center mx-1 justify-center"
-                >
+                <a href="#" target="_blank" rel="noreferrer" className="rounded-full bg-white w-10 h-10 flex items-center mx-1 justify-center">
                   <div className="mx-2 mt-2">
                     <Image src={Facebook} />
                   </div>
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/enlighteneering-inc-"
+                  href="https://www.instagram.com/schoola__/"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-full bg-white w-10 h-10 flex items-center mx-1 justify-center"
