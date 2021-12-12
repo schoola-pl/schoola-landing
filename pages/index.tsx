@@ -10,8 +10,8 @@ const Home: NextPage = () => (
     <SectionCTA />
     <PartnersSection />
     <ProblemSection />
-    <NewsletterSection />
     <SocialSection />
+    <NewsletterSection />
   </>
 );
 
