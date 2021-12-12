@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 interface props {
   onValidated: (fields: EmailFormFields) => void;
   status: string | null;
-  withoutDescription: boolean;
+  withoutDescription?: boolean;
 }
 
 const NewsletterForm: React.FC<props> = ({ onValidated, status, withoutDescription }) => {
