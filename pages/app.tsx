@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import NewsletterSection from 'components/organisms/NewsletterSection/NewsletterSection';
-import SchoolFriends from 'public/icons/SchoolFriends.svg';
 import AppointmentIcon from 'public/icons/AppointmentIcon.svg';
 import LogIntegration from 'public/icons/LogIntegrationIcon.svg';
 import SpottedIcon from 'public/icons/SpottedIcon.svg';
