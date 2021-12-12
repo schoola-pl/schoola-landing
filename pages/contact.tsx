@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Instagram from 'public/icons/Instagram.svg';
 import Facebook from 'public/icons/Facebook.svg';
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 const items = [
   {
@@ -36,14 +38,45 @@ const items = [
   }
 ];
 
+interface userTypes {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone?: string;
+  message: string;
+}
+
 const contact = () => {
   const [index, setIndex] = useState(0);
+  const [isLoading, setLoadingState] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const { register, handleSubmit, reset } = useForm();
 
   useEffect(() => {
     setInterval(() => {
       setIndex((prev) => (prev === items.length - 1 ? 0 : ++prev));
     }, 6300);
   }, []);
+
+  const handleContact = async ({ firstName, lastName, email, phone, message }: userTypes) => {
+    try {
+      setLoadingState(true);
+      const preparedObject = {
+        name: `${firstName} ${lastName}`,
+        email,
+        phone: phone || 'brak',
+        content: message
+      };
+      await axios.post('https://hook.integromat.com/ktf2f3lyq7yt4y86yl5fl34t89f2k7p5', {
+        ...preparedObject
+      });
+      setLoadingState(false);
+      reset();
+    } catch (e) {
+      setError('Coś poszło nie tak...');
+    }
+  };
 
   return (
     <>
@@ -59,27 +92,27 @@ const contact = () => {
         >
           <defs>
             <linearGradient id="gradient" x1="67%" y1="3%" x2="33%" y2="97%">
-              <stop offset="5%" stop-color="#55ab6788"></stop>
-              <stop offset="95%" stop-color="#f1efe588"></stop>
+              <stop offset="5%" stopColor="#55ab6788"></stop>
+              <stop offset="95%" stopColor="#f1efe588"></stop>
             </linearGradient>
           </defs>
           <path
             d="M 0,500 C 0,500 0,166 0,166 C 65.55023923444975,179.2822966507177 131.1004784688995,192.56459330143542 238,201 C 344.8995215311005,209.43540669856458 493.1483253588517,213.02392344497608 610,205 C 726.8516746411483,196.97607655502392 812.3062200956938,177.33971291866027 898,157 C 983.6937799043062,136.66028708133973 1069.6267942583731,115.61722488038278 1160,117 C 1250.3732057416269,118.38277511961722 1345.1866028708134,142.19138755980862 1440,166 C 1440,166 1440,500 1440,500 Z"
             stroke="none"
-            stroke-width="0"
+            strokeWidth="0"
             fill="url(#gradient)"
             className="transition-all duration-300 ease-in-out delay-150 path-0 absolute bottom-0 left-0"
           ></path>
           <defs>
             <linearGradient id="gradient" x1="67%" y1="3%" x2="33%" y2="97%">
-              <stop offset="5%" stop-color="#55ab67ff"></stop>
-              <stop offset="95%" stop-color="#f1efe5ff"></stop>
+              <stop offset="5%" stopColor="#55ab67ff"></stop>
+              <stop offset="95%" stopColor="#f1efe5ff"></stop>
             </linearGradient>
           </defs>
           <path
             d="M 0,500 C 0,500 0,333 0,333 C 75.34928229665073,361.88995215311 150.69856459330146,390.7799043062201 243,373 C 335.30143540669854,355.2200956937799 444.555023923445,290.77033492822966 553,281 C 661.444976076555,271.22966507177034 769.0813397129185,316.1387559808613 878,334 C 986.9186602870815,351.8612440191387 1097.1196172248806,342.6746411483254 1191,338 C 1284.8803827751194,333.3253588516746 1362.4401913875597,333.16267942583727 1440,333 C 1440,333 1440,500 1440,500 Z"
             stroke="none"
-            stroke-width="0"
+            strokeWidth="0"
             fill="url(#gradient)"
             className="transition-all duration-300 ease-in-out delay-150 path-1 absolute bottom-0 left-0"
           ></path>
@@ -138,34 +171,55 @@ const contact = () => {
                 Skontaktuj się z nami<span className="text-emerald-dark">.</span>
               </h1>
             </div>
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
-              <input className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder="Imię*" />
-              <input
-                className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder="Nazwisko*"
-              />
-              <input className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline" type="email" placeholder="Email*" />
-              <input
-                className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
-                type="number"
-                placeholder="Telefon"
-              />
-            </div>
-            <div className="my-4">
-              <textarea
-                placeholder="Treść wiadomości*"
-                className="w-full h-32 bg-coolGray-light mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              ></textarea>
-            </div>
-            <div className="my-2 w-1/2 lg:w-1/4">
-              <button
-                className="uppercase text-sm font-bold tracking-wide bg-blue-default transition-colors text-white text-gray-100 p-3 hover:bg-blue-light rounded-lg w-full
+            <form onSubmit={handleSubmit(handleContact)}>
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                <input
+                  className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder="Imię*"
+                  {...register('firstName', { required: true })}
+                />
+                <input
+                  className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder="Nazwisko*"
+                  {...register('lastName', { required: true })}
+                />
+                <input
+                  className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="email"
+                  placeholder="Email*"
+                  {...register('email', {
+                    required: true,
+                    pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                  })}
+                />
+                <input
+                  className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="tel"
+                  placeholder="Telefon"
+                  {...register('phone', {
+                    required: false,
+                    pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
+                  })}
+                />
+              </div>
+              <div className="my-4">
+                <textarea
+                  placeholder="Treść wiadomości*"
+                  className="w-full h-32 bg-coolGray-light mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  {...register('message', { required: true })}
+                ></textarea>
+              </div>
+              <div className="my-2 w-1/2 lg:w-1/4">
+                <button
+                  className="uppercase text-sm font-bold tracking-wide bg-blue-default transition-colors text-white text-gray-100 p-3 hover:bg-blue-light rounded-lg w-full
                       focus:outline-none focus:shadow-outline"
-              >
-                Wyślij
-              </button>
-            </div>
+                >
+                  {error ? error : isLoading ? 'Wysyłanie...' : 'Wyślij'}
+                </button>
+              </div>
+            </form>
           </div>
 
           <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-emerald-dark rounded-2xl">
@@ -182,7 +236,9 @@ const contact = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl">Napisz mail'a</h2>
-                  <p className="text-gray-400">email@email.com</p>
+                  <p className="text-gray-400">
+                    <a href="mailto:schoolacontact@gmail.com">schoolacontact@gmail.com</a>
+                  </p>
                 </div>
               </div>
 
