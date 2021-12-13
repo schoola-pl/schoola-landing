@@ -11,9 +11,8 @@ import axios from 'axios';
 const items = [
   {
     id: 1,
-    image:
-      'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.6435-1/c0.18.200.200a/p200x200/186173524_1497571507248720_2353136923100118796_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=7206a8&_nc_ohc=9gEzuHg3gzwAX-78ve7&_nc_ht=scontent.fwaw7-1.fna&oh=dbfc4c293aa4e95849f35a84335df844&oe=61D1826D',
-    text: 'Lorem ipsum'
+    image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
+    text: 'Feedback od naszych odbiorców i użytkowników jest najważniejszy, więc śmiało pisz co uważasz!'
   },
   {
     id: 2,
@@ -22,19 +21,18 @@ const items = [
   },
   {
     id: 3,
-    image:
-      'https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-1/p200x200/264673352_957377688189216_2443246515182621220_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=K54i-3fyLSAAX-FtgTk&_nc_ht=scontent.fwaw7-1.fna&oh=930506c2e7b02df069fbbbc71e5cdf02&oe=61B3FC5F',
+    image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LLK163M4-2aabbb6efe96-512',
     text: 'Lorem ipsum'
   },
   {
     id: 4,
-    image: 'https://avatars.githubusercontent.com/u/77537823?v=4',
+    image:
+      'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-1/p200x200/230432367_1249529202171525_6067988580644517225_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=8KRhEacjyEYAX-mvHOP&_nc_ht=scontent-frt3-1.xx&oh=add2d222bcd5d7e36ce44bc563addf59&oe=61BB1442',
     text: 'Lorem ipsum'
   },
   {
     id: 5,
-    image:
-      'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=4MbBEWsUWU0AX8YCvUy&_nc_ht=scontent.fwaw7-1.fna&oh=5b207360ce8071f79890b403046e685c&oe=61D14C78',
+    image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
     text: 'Lorem ipsum'
   }
 ];
@@ -240,14 +238,6 @@ const contact = () => {
                   <p className="text-gray-400">
                     <a href="mailto:schoolacontact@gmail.com">schoolacontact@gmail.com</a>
                   </p>
-                </div>
-              </div>
-
-              <div className="flex my-4 w-2/3 lg:w-1/2">
-                <div className="flex flex-col">
-                  <h2 className="text-2xl">Zadzwoń do nas</h2>
-                  <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
-                  <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
                 </div>
               </div>
 
