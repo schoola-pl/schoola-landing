@@ -8,7 +8,7 @@ import SocialSection from '../components/organisms/SocialSection/SocialSection';
 const Home: NextPage = () => (
   <>
     <SectionCTA />
-    <PartnersSection />
+    {/* <PartnersSection /> */}
     <ProblemSection />
     <SocialSection />
     <NewsletterSection />
