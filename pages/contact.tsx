@@ -258,7 +258,7 @@ const contact = () => {
                   </div>
                 </a>
                 <a
-                  href="#"
+                  href="https://medium.com/@schoolapl"
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-full  bg-blue-default w-10 h-10 flex items-center mx-1 justify-center"
