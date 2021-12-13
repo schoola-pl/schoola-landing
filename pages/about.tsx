@@ -8,8 +8,8 @@ const team = [
   {
     name: 'Teodor Wolski',
     role: 'Front-end developer & Leader',
-    description: 'Lorem ipsum dolor sit',
-    img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.6435-1/c0.18.200.200a/p200x200/186173524_1497571507248720_2353136923100118796_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=7206a8&_nc_ohc=9gEzuHg3gzwAX-78ve7&_nc_ht=scontent.fwaw7-1.fna&oh=dbfc4c293aa4e95849f35a84335df844&oe=61D1826D',
+    description: 'Talk is cheap',
+    img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
     socials: {
       github: 'https://github.com/TeodorWolski',
       twitter: null,
@@ -33,8 +33,9 @@ const team = [
   {
     name: 'Kuba Junak',
     role: 'Marketing & SEO Manager',
-    description: 'Za dnia palacz cameli niebieskich, zaś w nocy czynny konsument pornografii',
-    img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-1/p200x200/264673352_957377688189216_2443246515182621220_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=K54i-3fyLSAAX-FtgTk&_nc_ht=scontent.fwaw7-1.fna&oh=930506c2e7b02df069fbbbc71e5cdf02&oe=61B3FC5F',
+    description:
+      'Niesamowity, ambitny, zabawny, przystojny, i od lat zafascynowany rozwojem osobistym, biznesem, marketingiem, sprzedażą oraz szeroko pojętym high-performance. Codziennie pokonuje samego siebie, by zbliżać się do swoich wielkich celów, pragnień i ambicji.',
+    img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LLK163M4-2aabbb6efe96-512',
     socials: {
       github: null,
       twitter: null,
@@ -45,8 +46,9 @@ const team = [
   {
     name: 'Daniel Novyk ',
     role: 'Marketing Manager',
-    description: 'Lorem ipsum dolor sit',
-    img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t39.30808-1/p200x200/230432367_1249529202171525_6067988580644517225_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=qo9R3jGWyEsAX_QI02Y&_nc_ht=scontent.fwaw7-1.fna&oh=e52f65465792efe2de39043f0d5ce5dd&oe=61B13102',
+    description:
+      'Jestem osobą przedsiębiorczą i ambitną. Od dawna moim celem jest stworzenie dużego biznesu, która daje dużą wartość dla klienta. Codziennie do tego dążę aby to zrealizować.',
+    img: 'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-1/p200x200/230432367_1249529202171525_6067988580644517225_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=8KRhEacjyEYAX-mvHOP&_nc_ht=scontent-frt3-1.xx&oh=add2d222bcd5d7e36ce44bc563addf59&oe=61BB1442',
     socials: {
       github: null,
       twitter: null,
@@ -57,8 +59,8 @@ const team = [
   {
     name: 'Veronika Latala',
     role: 'Marketing Manager',
-    description: 'Lorem ipsum dolor sit',
-    img: 'https://scontent.fwaw7-1.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&ccb=1-5&_nc_sid=7206a8&_nc_ohc=4MbBEWsUWU0AX8YCvUy&_nc_ht=scontent.fwaw7-1.fna&oh=5b207360ce8071f79890b403046e685c&oe=61D14C78',
+    description: 'Hej! Mam na imię Weronika.  Kocham podróżować, poznawać nowe osoby i kultury!',
+    img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
     socials: {
       github: null,
       twitter: null,
@@ -123,7 +125,7 @@ const about = () => {
               tabIndex={1}
               className="w-full bg-amber-dark rounded-lg z-20 overflow-hidden text-coolGray-light drop-shadow-lg md:opacity-90 md:transition-opacity hover:opacity-100 focus:opacity-100 flex flex-col md:flex-row"
             >
-              <div className="w-full  md:w-2/5 h-full">
+              <div className="w-full md:w-2/5 h-full">
                 <img className="object-center object-cover w-full h-full" src={person.img} alt={`${person.name}'s photo`} />
               </div>
               <div className="w-full md:w-3/5 text-left p-4 md:p-4 space-y-2">
