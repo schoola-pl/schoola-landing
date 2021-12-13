@@ -166,9 +166,9 @@ const about = () => {
                   )}
                   {person.socials.mail && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
-                      <Link href={`mailto:${person.socials.mail}`}>
+                      <a href={`mailto:${person.socials.mail}`} target="_blank" rel="noopener noreferrer">
                         <Image src={Email} />
-                      </Link>
+                      </a>
                     </span>
                   )}
                   {person.socials.github && (
