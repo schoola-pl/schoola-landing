@@ -33,7 +33,7 @@ const items = [
   {
     id: 5,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
-    text: 'Lorem ipsum'
+    text: 'Kto pyta nie błądzi! Jeśli macie jakiekolwiek pytania śmiało piszcie do mnie!'
   }
 ];
 
