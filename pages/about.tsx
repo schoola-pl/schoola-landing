@@ -1,4 +1,3 @@
-import Link from 'next/dist/client/link';
 import React from 'react';
 import Image from 'next/image';
 import Team from 'public/icons/Team.svg';
@@ -145,23 +144,23 @@ const about = () => {
                 <div className="flex justify-start space-x-2">
                   {person.socials.facebook && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
-                      <Link href={person.socials.facebook}>
+                      <a href={person.socials.facebook} target="_blank" rel="noopener noreferrer">
                         <Image src={Facebook} />
-                      </Link>
+                      </a>
                     </span>
                   )}
                   {person.socials.instagram && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
-                      <Link href={person.socials.instagram}>
+                      <a href={person.socials.instagram} target="_blank" rel="noopener noreferrer">
                         <Image src={Instagram} />
-                      </Link>
+                      </a>
                     </span>
                   )}
                   {person.socials.twitter && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
-                      <Link href={person.socials.twitter}>
+                      <a href={person.socials.twitter} target="_blank" rel="noopener noreferrer">
                         <Image src={Twitter} />
-                      </Link>
+                      </a>
                     </span>
                   )}
                   {person.socials.mail && (
@@ -173,9 +172,9 @@ const about = () => {
                   )}
                   {person.socials.github && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
-                      <Link href={person.socials.github}>
+                      <a href={person.socials.github} target="_blank" rel="noopener noreferrer">
                         <Image src={GitHub} />
-                      </Link>
+                      </a>
                     </span>
                   )}
                 </div>

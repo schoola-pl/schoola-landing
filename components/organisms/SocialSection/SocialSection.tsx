@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React from 'react';
 import Instagram from 'public/icons/instagram.svg';
 import Medium from 'public/icons/Medium.svg';
-import Facebook from 'public/icons/Facebook.svg';
 import Image from 'next/image';
 
 const socials = [
@@ -12,11 +11,11 @@ const socials = [
       'Instagram to podstawa naszej społeczności. Trzy razy w tygodniu możesz zobaczyć tam posty o tematyce około szkolnej oraz relacje dot. rozwoju.',
     icon: Instagram
   },
-  {
-    link: 'https://www.facebook.com/',
-    description: "Wszystkie aktualności, a także ankiety i wiele więcej - znajdziesz właśnie na Facebook'u. Zapraszamy do obserwacji profilu!",
-    icon: Facebook
-  },
+  // {
+  //   link: 'https://www.facebook.com/',
+  //   description: "Wszystkie aktualności, a także ankiety i wiele więcej - znajdziesz właśnie na Facebook'u. Zapraszamy do obserwacji profilu!",
+  //   icon: Facebook
+  // },
   {
     link: 'https://www.medium.com/@schoolapl',
     description: 'Jesteś ambitną osobą? Chcesz wiele osiągnąć w życiu? Zapraszamy na naszego bloga, gdzie poruszamy głębiej temat szkoły.',
@@ -34,7 +33,7 @@ const SocialSection = () => {
             <p className="text-white text-center md:text-lg md:w-3/4">Social media to nasze guru! Lorem ipsum solor sit amet dir compedentece</p>
           </div>
         </header>
-        <div className="flex items-center  justify-center flex-col my-7 px-12 lg:grid lg:grid-cols-2 lg:gap-4 xl:grid-cols-3 xl:gap-7 lg:px-20 xl:px-32">
+        <div className="flex items-center  justify-center flex-col my-7 px-12 lg:grid lg:grid-cols-2 lg:gap-4 xl:grid-cols-2 xl:gap-14 lg:px-20 xl:px-32">
           {socials.map(({ link, icon, description }) => {
             return (
               <section className="w-full mb-6 lg:mb-4 shadow-md opacity-80 transition-opacity hover:opacity-100 cursor-pointer">
