@@ -129,12 +129,14 @@ const contact = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </div>
             <div className="w-full my-5 h-16 mb-20">
-              <button
-                className="w-full shadow-md font-medium py-4 px-6 md:py-2 md:px-4 text-white
+              <a href="#contact-form">
+                <button
+                  className="w-full shadow-md font-medium py-4 px-6 md:py-2 md:px-4 text-white
                cursor-pointer hover:bg-blue-light bg-blue-default hover:bg-yellow-500 rounded text-lg text-center md:w-48 lg:w-60 lg:py-3"
-              >
-                Szybki kontakt
-              </button>
+                >
+                  Szybki kontakt
+                </button>
+              </a>
             </div>
           </div>
           <TransitionGroup>
@@ -163,7 +165,7 @@ const contact = () => {
       </div>
 
       <section className={'bg-amber-light'}>
-        <div className="container mx-auto px-4 lg:px-20 py-32 lg:pb-52">
+        <div className="container mx-auto px-4 lg:px-20 py-32 lg:pb-52" id="contact-form">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-white">
             <div className="flex">
               <h1 className="font-bold uppercase text-5xl mb-5">
