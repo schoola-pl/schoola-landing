@@ -3,7 +3,6 @@ import Support from 'public/icons/Support.svg';
 import Image from 'next/image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Instagram from 'public/icons/Instagram.svg';
-import Facebook from 'public/icons/Facebook.svg';
 import Medium from 'public/icons/Medium.svg';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
@@ -244,11 +243,11 @@ const contact = () => {
               </div>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
-                <a href="#" target="_blank" rel="noreferrer" className="rounded-full bg-blue-default w-10 h-10 flex items-center mx-1 justify-center">
-                  <div className="mx-2 mt-2">
-                    <Image src={Facebook} />
-                  </div>
-                </a>
+                {/*<a href="#" target="_blank" rel="noreferrer" className="rounded-full bg-blue-default w-10 h-10 flex items-center mx-1 justify-center">*/}
+                {/*  <div className="mx-2 mt-2">*/}
+                {/*    <Image src={Facebook} />*/}
+                {/*  </div>*/}
+                {/*</a>*/}
                 <a
                   href="https://www.instagram.com/schoola__/"
                   target="_blank"
