@@ -4,7 +4,7 @@ import NavLink from '../../atoms/NavLink/NavLink';
 const routes = [
   { name: 'O nas', path: '/about' },
   { name: 'Aplikacja', path: '/app' },
-  // { name: 'Blog', path: 'https://medium.com/@schoolapl' },
+  { name: 'Blog', path: 'https://medium.com/@schoolapl' },
   { name: 'Kontakt', path: '/contact' }
 ];
 

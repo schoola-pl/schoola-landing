@@ -16,7 +16,7 @@ const NavLink: React.FC<props> = ({ route }) => {
     <Link href={route.path}>
       <li
         key={route.name}
-        className={`w-full transition-opacity text-lg cursor-pointer mx-2 py-5 px-10 text-amber-light hover:opacity-100 md:text-black-classic ${
+        className={`w-auto transition-opacity text-lg cursor-pointer mx-4 md:mx-2 py-5 px-5 md:px-10 text-amber-light hover:opacity-100 md:text-black-classic ${
           asPath === route.path ? 'opacity-100' : 'opacity-60'
         }`}
       >
