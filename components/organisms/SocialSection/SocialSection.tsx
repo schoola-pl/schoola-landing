@@ -29,7 +29,9 @@ const SocialSection = () => {
       <div className="bg-emerald-dark mb-20 py-14">
         <header>
           <div className="flex flex-col items-center justify-center pb-5 px-24">
-            <h1 className="font-bold text-white text-3xl text-gray-900 sm:text-4xl lg:text-5xl mb-2 2xl:text-5xl">Śledź nas w internecie!</h1>
+            <h1 className="font-bold text-white text-3xl text-gray-900 sm:text-4xl lg:text-5xl mb-2 2xl:text-5xl text-center">
+              Śledź nas w internecie!
+            </h1>
             <p className="text-white text-center md:text-lg md:w-3/4">Social media to nasze guru! Lorem ipsum solor sit amet dir compedentece</p>
           </div>
         </header>
