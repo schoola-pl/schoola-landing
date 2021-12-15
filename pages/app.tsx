@@ -43,9 +43,12 @@ const features = [
 const app = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-20">
-      <h1 className="text-5xl text-center font-bold mb-5 lg:py-10">
+      <h1 className="text-5xl text-center font-bold lg:pt-10">
         Poznaj możliwości schoola<span className="text-emerald-dark">.</span>
       </h1>
+      <p className="text-blue-default text-center px-20 mb-5 mt-3 md:text-lg md:w-3/4 lg:pb-10 lg:w-1/2">
+        Lorem ipsum solor sit amet orem ipsum solor sit amet orem ipsum solor sit amet orem ipsum solor sit ametorem ipsum solor sit amet
+      </p>
       <div className="grid place-content-center mb-10">
         {features.map(({ icon, title, description, inProgress }, index) => (
           <div
@@ -55,7 +58,7 @@ const app = () => {
           >
             <div className={`${index % 2 === 0 ? 'lg:col-start-2' : null} px-20`}>
               <h1
-                className={`text-center text-2xl font-semibold md:text-3xl xl:text-4xl 2xl:text-5xl xl:text-left ${
+                className={`text-center text-2xl font-semibold md:text-3xl xl:text-4xl 2xl:text-5xl xl:text-left lg:mb-2 xl:mb-3 ${
                   index % 2 === 0 ? 'xl:text-right' : null
                 }`}
               >
