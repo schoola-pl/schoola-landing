@@ -21,7 +21,7 @@ const items = [
   {
     id: 3,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LLK163M4-2aabbb6efe96-512',
-    text: 'Lorem ipsum'
+    text: 'Siema! Jak masz jakiś problem to napisz do mnie!'
   },
   {
     id: 4,

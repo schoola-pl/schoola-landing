@@ -61,13 +61,13 @@ const team = [
       twitter: null,
       facebook: 'https://www.facebook.com/daniel.novyk.1',
       instagram: 'https://www.instagram.com/daniel_zz_/',
-      mail: '#'
+      mail: 'danielnovyk.schoola@gmail.com'
     }
   },
   {
     name: 'Weronika Latala',
     role: 'Marketing Manager',
-    description: 'Hej! Mam na imię Weronika.  Kocham podróżować, poznawać nowe osoby i kultury!',
+    description: 'Hej! Mam na imię Weronika. Kocham podróżować, poznawać nowe osoby i kultury!',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
     socials: {
       github: null,
