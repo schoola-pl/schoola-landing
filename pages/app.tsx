@@ -34,7 +34,7 @@ const features = [
   },
   {
     icon: LogIntegration,
-    title: 'Integracje z twoim własnym dziennikiem elektronicznym!',
+    title: 'Integracje z twoim dziennikiem elektronicznym!',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     inProgress: true
   }

@@ -72,7 +72,7 @@ const AppIntroductionSection = () => (
         </div>
       </div>
     </div>
-    <div className="h-24 bg-amber-dark w-screen opacity-50 shadow-inner shadow-2xl"></div>
+    <div className="h-24 bg-white w-screen opacity-50 shadow-inner shadow-2xl"></div>
   </>
 );
 
