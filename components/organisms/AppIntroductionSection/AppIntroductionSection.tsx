@@ -2,7 +2,7 @@ import React from 'react';
 
 const AppIntroductionSection = () => (
   <>
-    <div className="bg-amber-default relative p-12 h-full flex flex-col justify-center text-center">
+    <div className="bg-amber-default relative p-12 h-full flex flex-col justify-center text-center mb-24">
       <h1 className="font-bold text-3xl pt-6 pb-4 text-gray-900 sm:text-4xl md:pb-16 2xl:text-5xl">
         Cała szkoła w jednej aplikacji<span className="text-emerald-dark">.</span>
       </h1>
