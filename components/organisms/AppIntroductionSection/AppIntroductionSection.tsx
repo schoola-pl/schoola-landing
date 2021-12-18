@@ -19,8 +19,8 @@ const AppIntroductionSection = () => (
               </svg>
             </div>
           </div>
-          <p className="text-lg 2xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor incididunt
+          <p className="text-lg pt-2 2xl:text-xl">
+            Napotkałeś jakiś problem, nie wiesz co zrobić? Umów się na rozmowę z psychologiem szkolnym, wystarczy tylko 1 kliknięcie!
           </p>
         </div>
         <div className="">
@@ -33,8 +33,9 @@ const AppIntroductionSection = () => (
               </div>
             </div>
           </div>
-          <p className="text-lg 2xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor incididunt
+          <p className="text-lg pt-2  2xl:text-xl">
+            Potrzebujesz pilnie coś porzyczyć, bądź chcesz napisać anonimową wiadomość, którą każdy zobaczy? Skorzystaj ze szkolnej tablicy i spotted.
+            <strong> PS, nauczyciele tego nie widzą!</strong>
           </p>
         </div>
         <div className="m-1">
@@ -66,8 +67,8 @@ const AppIntroductionSection = () => (
               </div>
             </div>
           </div>
-          <p className="text-lg 2xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur, lorem ipsum dolor sit amet, sed diam nonumy eirmod tempor incididunt
+          <p className="text-lg pt-2 2xl:text-xl">
+            Dzięki naszej aplikacji będziesz mógł zapoznać się ze wszystkimi osobami o podobnych zainteresowaniach w twojej szkole!
           </p>
         </div>
       </div>
