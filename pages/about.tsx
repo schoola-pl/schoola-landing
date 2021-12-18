@@ -114,8 +114,7 @@ const about = () => {
           <h2 className="text-base font-bold text-indigo-600 md:text-left">
             Chcemy razem zmienić świat na lepsze, w tym szkoły<span className="text-emerald-dark">.</span>
           </h2>
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left">
-            Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left"> Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
           </h1>
           <article>
             <p className="px-5 my-3 md:py-8 md:px-8 md:mt-6 text-justify md:leading-relaxed md:bg-white md:mr-10 md:border-emerald-dark md:border-l-4 text-lg relative z-10">

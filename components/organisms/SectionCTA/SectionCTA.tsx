@@ -6,10 +6,9 @@ import Link from 'next/link';
 const SectionCTA: React.FC = () => (
   <div className="h-full flex items-center justify-center flex-col-reverse md:flex-row px-5 md:px-3 xl:px-16 xl:py-0 2xl:mb-4 2xl:py-12">
     <div className="flex flex-col items-start py-10 px-4 md:py-20 lg:py-26">
-      <h1 className="text-5xl md:text-6xl mb-8 font-extrabold tracking-tight xl:text-7xl 2xl:mb-20">Lorem ipsum dolor sit amet</h1>
+      <h1 className="text-5xl md:text-6xl mb-8 font-extrabold tracking-tight xl:text-7xl 2xl:mb-20">Życie szkoły w jednym miejscu!</h1>
       <p className="text-lg md:text-xl 2xl:text-2xl max-w-3xl text-justify md:text-left">
-        lorem ipsum dolor sit am lorem Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil omnis optio
-        cupiditate ullam cupiditate ullam cupiditate ullam cupiditate ullam
+      Najlepsza aplikacja szkolna dla uczniów do: poznawania innych osób, komunikacji i dbania o siebie!
       </p>
       <div className="mt-8 md:mt-10 2xl:mt-20 flex flex-col md:flex-row content-start w-full md:w-auto">
         <div className="inline-flex rounded-md shadow">
