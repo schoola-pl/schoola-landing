@@ -25,9 +25,8 @@ const items = [
   },
   {
     id: 4,
-    image:
-      'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-1/p200x200/230432367_1249529202171525_6067988580644517225_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=8KRhEacjyEYAX-mvHOP&_nc_ht=scontent-frt3-1.xx&oh=add2d222bcd5d7e36ce44bc563addf59&oe=61BB1442',
-    text: 'Lorem ipsum'
+    image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02M94PMPKL-b19d4cc02422-512',
+    text: 'Skontaktuj się ze mną!'
   },
   {
     id: 5,
@@ -125,7 +124,8 @@ const contact = () => {
               <span className="text-emerald-dark">24/7</span> do twojej dyspozycji<span className="text-emerald-dark">.</span>
             </div>
             <div className="text-justify text-xl mt-4 lg:text-2xl  lg:w-4/6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Naszą działalność prowadzimy w oparciu o realne problemy uczniów, więc jeżeli masz pomysł jak moglibyśmy usprawnić twoje szkolne życie
+              skontaktuj się z nami jak najszybciej!
             </div>
             <div className="w-full my-5 h-16 mb-20">
               <a href="#contact-form">
@@ -224,11 +224,8 @@ const contact = () => {
 
           <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-emerald-dark rounded-2xl">
             <div className="flex flex-col text-white">
-              <h1 className="font-bold uppercase text-4xl my-4">Lorem ipsum</h1>
-              <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt arcu diam, eu feugiat felis fermentum id. Curabitur vitae
-                nibh viverra, auctor turpis sed, scelerisque ex.
-              </p>
+              <h1 className="font-bold uppercase text-4xl my-4">Czekamy na feedback od ciebie!</h1>
+              <p className="text-gray-400">Chętnie odpowiemy na twoje pytania, sugestie, bądź uwagi!</p>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
                 <div className="flex flex-col">
