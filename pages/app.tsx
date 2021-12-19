@@ -5,37 +5,42 @@ import LogIntegration from 'public/icons/LogIntegrationIcon.svg';
 import SpottedIcon from 'public/icons/SpottedIcon.svg';
 import FeedIcon from 'public/icons/FeedIcon.svg';
 import MeetNewPeople from 'public/icons/MeetNewPeopleIcon.svg';
-import NewsletterSection from '../components/organisms/NewsletterSection/NewsletterSection';
+import NewsletterSection from 'components/organisms/NewsletterSection/NewsletterSection';
 
 const features = [
   {
     icon: AppointmentIcon,
     title: 'Umów się na spotkanie ze szkolnym psychologiem!',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description:
+      'Już teraz możesz w łatwy i szybki sposób zapisać się do Twojego psychologa szkolnego, aby mógł pomóc Ci rozwiązać Twój problem, gdy tylko pojawi się taka potrzeba.',
     inProgress: false
   },
   {
     icon: SpottedIcon,
     title: 'Korzystaj z oficjalnego spotted szkoły.',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description:
+      'Schoola umożliwia szybki i łatwy, a co najważniejsze anonimowy dostęp do szkolnego spotted dla uczniów w jednym miejscu. Uwaga! Informacje tam umieszczane nie będą dostępne dla nauczycieli!',
     inProgress: false
   },
   {
     icon: FeedIcon,
     title: 'Umieszczaj oraz czytaj ogłoszenia z całej szkoły.',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description:
+      'Nasza aplikacja umożliwia dodawanie ogłoszeń jak i różnego rodzaju pytań. Potrzebujesz ładowarki do telefonu? Chcesz pożyczyć od kogoś 5zł? Nie ma problemu napisz to na uczniowskiej tablicy ogłoszeń!',
     inProgress: false
   },
   {
     icon: MeetNewPeople,
     title: 'Poznaj nowych ludzi!',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description:
+      'Dzięki technologii Schoola, poznasz nowe osoby w szkole w oparciu o twoje zainteresowania. Nigdy wcześniej poznanie kolegi czy przyjaciela z podobnymi zainteresowaniami nie było łatwiejsze!',
     inProgress: false
   },
   {
     icon: LogIntegration,
     title: 'Integracje z twoim dziennikiem elektronicznym!',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description:
+      'Najbardziej potrzebne informacje w ramach Twojego dziennika elektronicznego już teraz dostępne w jednym miejscu! Jesteś w stanie sprawdzić to co potrzebujesz, szybko i bezproblemowo. Dodatkowo opcja automatycznego rozplanowania nauki pozwoli Ci jeszcze łatwiej nauczyć się na kartkówkę czy sprawdzian.',
     inProgress: true
   }
 ];
@@ -47,7 +52,8 @@ const app = () => {
         Poznaj możliwości schoola<span className="text-emerald-dark">.</span>
       </h1>
       <p className="text-blue-default text-center px-20 mb-5 mt-3 md:text-lg md:w-3/4 lg:pb-10 lg:w-1/2">
-        Lorem ipsum solor sit amet orem ipsum solor sit amet orem ipsum solor sit amet orem ipsum solor sit ametorem ipsum solor sit amet
+        Schoola powstała z myślą o uczniach. Umożliwia zbudowanie zaangażowanej społeczności i zżycie się uczniów ze szkołą. To wszystko sprawia, że
+        coraz chętniej będziesz chodził do szkoły!
       </p>
       <div className="grid place-content-center mb-10">
         {features.map(({ icon, title, description, inProgress }, index) => (
