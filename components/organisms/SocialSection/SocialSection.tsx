@@ -32,7 +32,6 @@ const SocialSection = () => {
             <h1 className="font-bold text-white text-3xl text-gray-900 sm:text-4xl lg:text-5xl mb-2 2xl:text-5xl text-center">
               Śledź nas w internecie!
             </h1>
-            <p className="text-white text-center md:text-lg md:w-3/4">Social media to nasze guru! Lorem ipsum solor sit amet dir compedentece</p>
           </div>
         </header>
         <div className="flex items-center  justify-center flex-col my-7 px-12 lg:grid lg:grid-cols-2 lg:gap-4 xl:grid-cols-2 xl:gap-14 lg:px-20 xl:px-32">

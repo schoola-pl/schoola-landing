@@ -48,7 +48,10 @@ const NewsletterForm: React.FC<props> = ({ onValidated, status, withoutDescripti
               </span>
             )}
           </h1>
-          <p className="text-center mb-3 sm:mb-5 text-md md:text-lg">OPIS NEWSLETTERA w trzech zdaniach, Lorem ipsum dolor sit, amet</p>
+          <p className="text-center mb-3 sm:mb-5 text-md md:text-lg">
+            Newsletter został stworzony z myślą o ambitnych uczniach. Dzięki niemu poznasz między innymi ,,techniki uczenia się'' i ,,zyskasz porady
+            zawodowe''.
+          </p>
         </>
       ) : null}
       <form onSubmit={handleSubmit(newsletterHandler)} className="flex justify-center mx-3">
