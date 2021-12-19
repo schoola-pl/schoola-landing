@@ -99,9 +99,8 @@ const about = () => {
               Pracujemy dla dobra naszych rówieśników
             </p>
             <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 lg:text-lg md:pr-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lacinia nibh. Integer sagittis, tortor eu lacinia feugiat, nisl
-              velit placerat massa, nec suscipit orci turpis at metus. Duis mollis libero vitae magna cursus porta. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae; Aliquam et consectetur urna.
+              Młodzi i ambitni - to właśnie nasz zespół. Schoola powstała z myślą o uczniac. Dążymy do tego aby czas spędzony w szkole stawał się
+              przyjemniejszy.
             </p>
           </div>
           <div className="opacity-0 absolute right-0 bottom-8 md:opacity-50 md:right-52 md:top-52 md:pl-60 xl:right-10">
@@ -120,9 +119,9 @@ const about = () => {
           </h1>
           <article>
             <p className="px-5 my-3 md:py-8 md:px-8 md:mt-6 text-justify md:leading-relaxed md:bg-white md:mr-10 md:border-emerald-dark md:border-l-4 text-lg relative z-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lacinia nibh. Integer sagittis, tortor eu lacinia feugiat, nisl
-              velit placerat massa, nec suscipit orci turpis at metus. Duis mollis libero vitae magna cursus porta. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
+              O dziwo nie jesteśmy z jednej szkoły, ani z jednego miasta! Mówiąc językiem buzzwordów jesteśmy międzynarodowym teamem, ale na szczęście
+              go nie używamy (chyba 😅). Weronika studiuje w Tilburgu w Holandii, Kuba mieszka w jakimś zadupiu pod Wrocławiem, a Teodor, Kuba i
+              Daniel mieszkają w Słupsku.
             </p>
           </article>
           <div className="opacity-0 absolute left-10 bottom-8  md:opacity-50">
