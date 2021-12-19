@@ -19,7 +19,7 @@ const team = [
       twitter: null,
       facebook: 'https://www.facebook.com/profile.php?id=100009876557188',
       instagram: 'https://www.instagram.com/wolskiteodor/',
-      mail: 'teodorwolski88@gmail.com'
+      mail: 'teodorwolski88@protonmail.com'
     }
   },
   {
@@ -55,7 +55,7 @@ const team = [
     role: 'Marketing Manager',
     description:
       'Jestem osobą przedsiębiorczą i ambitną. Od dawna moim celem jest stworzenie dużego biznesu, która daje dużą wartość dla klienta. Codziennie do tego dążę aby to zrealizować.',
-    img: 'https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-1/p200x200/230432367_1249529202171525_6067988580644517225_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=7206a8&_nc_ohc=8KRhEacjyEYAX-mvHOP&_nc_ht=scontent-frt3-1.xx&oh=add2d222bcd5d7e36ce44bc563addf59&oe=61BB1442',
+    img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02M94PMPKL-b19d4cc02422-512',
     socials: {
       github: null,
       twitter: null,
@@ -114,7 +114,9 @@ const about = () => {
           <h2 className="text-base font-bold text-indigo-600 md:text-left">
             Chcemy razem zmienić świat na lepsze, w tym szkoły<span className="text-emerald-dark">.</span>
           </h2>
-          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left"> Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
+          <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left">
+            {' '}
+            Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
           </h1>
           <article>
             <p className="px-5 my-3 md:py-8 md:px-8 md:mt-6 text-justify md:leading-relaxed md:bg-white md:mr-10 md:border-emerald-dark md:border-l-4 text-lg relative z-10">
