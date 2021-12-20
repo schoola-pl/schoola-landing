@@ -26,7 +26,7 @@ const items = [
   {
     id: 4,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02M94PMPKL-b19d4cc02422-512',
-    text: 'Skontaktuj się ze mną!'
+    text: 'Marketing,Biznes,Szkoła? A może coś innego? Jeżeli masz pytania lub wątpliwości , to pisz śmiało!'
   },
   {
     id: 5,

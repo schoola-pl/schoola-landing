@@ -99,7 +99,7 @@ const about = () => {
               Pracujemy dla dobra naszych rówieśników
             </p>
             <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 lg:text-lg md:pr-0">
-              Młodzi i ambitni - to właśnie nasz zespół. Schoola powstała z myślą o uczniac. Dążymy do tego aby czas spędzony w szkole stawał się
+              Młodzi i ambitni - to właśnie nasz zespół. Schoola powstała z myślą o uczniach. Dążymy do tego aby czas spędzony w szkole stawał się
               przyjemniejszy.
             </p>
           </div>

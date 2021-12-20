@@ -2,7 +2,7 @@ import React from 'react';
 
 const AppIntroductionSection = () => (
   <>
-    <div className="bg-amber-default relative p-12 h-full flex flex-col justify-center text-center mb-24">
+    <div className="bg-amber-default relative p-12 h-full flex flex-col justify-center text-center">
       <h1 className="font-bold text-3xl pt-6 pb-4 text-gray-900 sm:text-4xl md:pb-16 2xl:text-5xl">
         Cała szkoła w jednej aplikacji<span className="text-emerald-dark">.</span>
       </h1>
@@ -73,7 +73,7 @@ const AppIntroductionSection = () => (
         </div>
       </div>
     </div>
-    <div className="hidden md:block h-24 bg-white w-screen opacity-50 shadow-inner"></div>
+    <div className="hidden md:block h-48 bg-white w-screen opacity-50 shadow-inner"></div>
   </>
 );
 
