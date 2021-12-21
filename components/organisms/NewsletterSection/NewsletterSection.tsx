@@ -4,29 +4,19 @@ import React from 'react';
 
 const NewsletterSubscribe = () => {
   return (
-    <a target="_blank" rel="noopener noreferrer" href="https://eepurl.com/hPCZ4f">
-      <button className="font-medium px-10 py-2 ml-3 md:px-12 rounded-md bg-blue-default transition-all text-coolGray-white hover:bg-blue-light">
-        Zapisz się na nasz newsletter!
-      </button>
-    </a>
+    <div className="flex flex-col justify-center items-center my-10">
+      <h1 className="text-center font-semibold mb-3 text-lg">Odbierz darmowego e-booka o 10 metodach skutecznego uczenia się!</h1>
+      <p className="text-center mx-5 mb-3 sm:mb-5 text-md md:text-lg">
+        Newsletter został stworzony z myślą o ambitnych uczniach. Dzięki niemu odbierzesz e-booka o 10 metodach uczenia się i zyskasz porady, które
+        pomogą Ci ukształtować życie zawodowe.
+      </p>
+      <a target="_blank" rel="noopener noreferrer" href="https://eepurl.com/hPCZ4f">
+        <button className="font-medium my-2 px-16 py-5 ml-3 md:px-12 rounded-md bg-blue-default transition-all text-coolGray-white hover:bg-blue-light">
+          Odbierz e-booka!
+        </button>
+      </a>
+    </div>
   );
 };
 
 export default NewsletterSubscribe;
-
-{
-  /* <MailchimpSubscribe
-url={MAILCHIMP_URL}
-render={({ subscribe, status }) => {
-  return (
-    <NewsletterForm withoutDescription={withoutDescription} onValidated={(formData: EmailFormFields) => subscribe(formData)} status={status} />
-  );
-}}
-/>
-);
-
-const MAILCHIMP_URL = 'https://gmail.us20.list-manage.com/subscribe/post?u=37d42ea39057bd19a6e145ae5&amp;id=fe551fe5a1';
-
-
-*/
-}

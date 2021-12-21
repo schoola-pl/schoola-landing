@@ -34,7 +34,7 @@ const AppIntroductionSection = () => (
             </div>
           </div>
           <p className="text-lg pt-2  2xl:text-xl">
-            Potrzebujesz pilnie coś porzyczyć, bądź chcesz napisać anonimową wiadomość, którą każdy zobaczy? Skorzystaj ze szkolnej tablicy i spotted.
+            Potrzebujesz pilnie coś pożyczyć, bądź chcesz napisać anonimową wiadomość, którą każdy zobaczy? Skorzystaj ze szkolnej tablicy i spotted.
             <strong> PS, nauczyciele tego nie widzą!</strong>
           </p>
         </div>
