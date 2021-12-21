@@ -5,7 +5,8 @@ import LogIntegration from 'public/icons/LogIntegrationIcon.svg';
 import SpottedIcon from 'public/icons/SpottedIcon.svg';
 import FeedIcon from 'public/icons/FeedIcon.svg';
 import MeetNewPeople from 'public/icons/MeetNewPeopleIcon.svg';
-import NewsletterSection from 'components/organisms/NewsletterSection/NewsletterSection';
+import NewsletterForm from 'components/molecules/NewsletterForm/NewsletterForm';
+import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
 
 const features = [
   {
@@ -46,6 +47,8 @@ const features = [
 ];
 
 const app = () => {
+  const MAILCHIMP_URL = 'https://gmail.us20.list-manage.com/subscribe/post?u=37d42ea39057bd19a6e145ae5&amp;id=fe551fe5a1';
+
   return (
     <div className="flex flex-col justify-center items-center mt-20">
       <h1 className="text-5xl text-center font-bold lg:pt-10">
@@ -94,7 +97,12 @@ const app = () => {
           Poznaj szkołę od <span className="text-emerald-dark">innej strony</span>!
         </h2>
         <p className="text-center mb-3 sm:mb-5 text-md md:text-lg p-5">Zapisz się na listę oczekujących naszej aplikacji!</p>
-        <NewsletterSection withoutDescription />
+        <MailchimpSubscribe
+          url={MAILCHIMP_URL}
+          render={({ subscribe, status }) => {
+            return <NewsletterForm withoutDescription onValidated={(formData: EmailFormFields) => subscribe(formData)} status={status} />;
+          }}
+        />
       </div>
     </div>
   );
