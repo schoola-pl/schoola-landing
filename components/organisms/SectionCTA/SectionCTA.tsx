@@ -8,7 +8,7 @@ const SectionCTA: React.FC = () => (
     <div className="flex flex-col items-start py-10 px-4 md:py-20 lg:py-26">
       <h1 className="text-5xl md:text-6xl mb-8 font-extrabold tracking-tight xl:text-7xl 2xl:mb-20">Życie szkoły w jednym miejscu!</h1>
       <p className="text-lg md:text-xl 2xl:text-2xl max-w-3xl text-justify md:text-left">
-        Najlepsza aplikacja szkolna dla uczniów do: poznawania innych osób, komunikacji i dbania o siebie!
+        Najlepsza aplikacja szkolna dla uczniów do poznawania innych osób, komunikacji i dbania o siebie!
       </p>
       <div className="mt-8 md:mt-10 2xl:mt-20 flex flex-col md:flex-row content-start w-full md:w-auto">
         <div className="inline-flex rounded-md shadow">
