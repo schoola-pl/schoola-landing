@@ -140,7 +140,7 @@ const about = () => {
               <div className="w-full md:w-3/5 text-left p-4 md:p-4 space-y-2">
                 <p className="text-xl text-gray-700 font-bold">{person.name}</p>
                 <p className="text-base text-gray-400 font-normal">{person.role}</p>
-                <p className="text-base leading-relaxed text-gray-500 font-normal">{person.description}</p>
+                <p className="text-sm leading-relaxed text-gray-500 font-normal">{person.description}</p>
                 <div className="flex justify-start space-x-2">
                   {person.socials.facebook && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">

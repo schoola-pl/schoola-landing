@@ -47,7 +47,6 @@ const contact = () => {
   const [index, setIndex] = useState(0);
   const [isLoading, setLoadingState] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
   const { register, handleSubmit, reset } = useForm();
 
   useEffect(() => {
@@ -273,5 +272,4 @@ const contact = () => {
     </>
   );
 };
-
 export default contact;

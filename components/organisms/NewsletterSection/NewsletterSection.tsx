@@ -1,5 +1,3 @@
-import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
-import NewsletterForm from 'components/molecules/NewsletterForm/NewsletterForm';
 import React from 'react';
 
 const NewsletterSubscribe = () => {
