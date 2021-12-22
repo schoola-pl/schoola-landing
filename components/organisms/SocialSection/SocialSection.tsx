@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import Instagram from 'public/icons/instagram.svg';
+import Instagram from 'public/icons/Instagram.svg';
 import Medium from 'public/icons/Medium.svg';
 import Image from 'next/image';
 
