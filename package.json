@@ -1,8 +1,10 @@
 {
+  "homepage": "http://schoola.pl",
   "name": "schoola-landing",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
