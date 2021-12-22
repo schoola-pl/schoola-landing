@@ -1,7 +1,6 @@
 {
   "root": true,
   "extends": [
-    "react-app",
     "react-app/jest",
     "plugin:prettier/recommended",
     "prettier",
@@ -9,9 +8,17 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "next/core-web-vitals"
   ],
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": [
+    "prettier",
+    "@typescript-eslint"
+  ],
   "rules": {
-    "prettier/prettier": ["error", { "singleQuote": true }]
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ]
   },
   "env": {
     "browser": true,
