@@ -7,6 +7,7 @@ import Facebook from 'public/icons/Facebook.svg';
 import Instagram from 'public/icons/Instagram.svg';
 import GitHub from 'public/icons/GitHub.svg';
 import Twitter from 'public/icons/Twitter.svg';
+import TeamImage from 'public/img/team.png';
 
 const team = [
   {
@@ -83,12 +84,8 @@ const about = () => {
   return (
     <>
       <section className="grid grid-cols-1 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
-        <div className="bg-amber-dark md:hidden">
-          <img
-            className="w-screen h-full object-cover object-top opacity-60"
-            src="https://st2.depositphotos.com/1037987/5934/i/950/depositphotos_59345825-stock-photo-group-of-high-school-students.jpg"
-            alt=""
-          />
+        <div className="bg-amber-dark pt-20 md:hidden relative">
+          <Image layout="responsive" src={TeamImage} alt="Team Image" />
         </div>
         <div className="flex bg-gray-100 relative p-10 md:flex md:items-center md:justify-center md:px-20 lg:px-40 xl:px-56">
           <div className="mb-auto mt-auto ">
