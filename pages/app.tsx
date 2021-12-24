@@ -61,7 +61,7 @@ const app = () => {
       <div className="grid place-content-center mb-10">
         {features.map(({ icon, title, description, inProgress }, index) => (
           <div
-            className={`my-10 py-5 px-12 flex flex-col-reverse justify-center items-center md:py-8 md:px-16 md:my-8 lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center xl:py-16 2xl:py-20 ${
+            className={`my-10 py-5 flex flex-col-reverse justify-center items-center md:py-8 md:px-16 md:my-8 lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-center xl:py-16 2xl:py-20 ${
               index % 2 === 0 ? 'bg-coolGray-light' : null
             }`}
           >
@@ -86,8 +86,8 @@ const app = () => {
                 </div>
               ) : null}
             </div>
-            <div className={`w-96 h-96 m-10 ${index % 2 === 0 ? 'lg:col-start-1 lg:row-start-1' : null}`}>
-              <Image width={500} height={500} src={icon} />
+            <div className={`w-96 h-96 my-10 md:m-10 ${index % 2 === 0 ? 'lg:col-start-1 lg:row-start-1' : null}`}>
+              <Image layout="responsive" src={icon} />
             </div>
           </div>
         ))}
