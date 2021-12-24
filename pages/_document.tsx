@@ -7,10 +7,10 @@ class MyDocument extends Document {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-          <title>Schoola ✨</title>
+          <title>Schoola</title>
 
           <meta name="description" content="Najlepsza aplikacja szkolna dla uczniów do poznawania innych osób, komunikacji i dbania o siebie!" />
-          <meta property="og:title" content="Schoola." />
+          <meta property="og:title" content="Schoola - leczymy szkolnictwo" />
           <meta
             property="og:description"
             content="Schoola powstała z myślą o uczniach. Umożliwia zbudowanie zaangażowanej społeczności i zżycie się uczniów ze szkołą. To wszystko sprawia, że coraz chętniej będziesz chodził do szkoły!"
