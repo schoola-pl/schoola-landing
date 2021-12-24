@@ -28,13 +28,11 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="favicon.png" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-YSBMD4QED3"></script>
           <script
-            async
             dangerouslySetInnerHTML={{
               __html: `window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YSBMD4QED3');`
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YSBMD4QED3');`
             }}
           />
         </Head>
