@@ -18,7 +18,7 @@ const features = [
   },
   {
     icon: SpottedIcon,
-    title: 'Korzystaj z oficjalnego spotted szkoły.',
+    title: `Korzystaj z oficjalnego spotted szkoły.`,
     description:
       'Schoola umożliwia szybki i łatwy, a co najważniejsze anonimowy dostęp do szkolnego spotted dla uczniów w jednym miejscu. Uwaga! Informacje tam umieszczane nie będą dostępne dla nauczycieli!',
     inProgress: false
