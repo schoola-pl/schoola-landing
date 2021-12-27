@@ -1,6 +1,8 @@
 {
   "root": true,
   "extends": [
+    "next",
+    "next/web-core-vitals",
     "plugin:prettier/recommended",
     "prettier",
     "plugin:@typescript-eslint/recommended",
