@@ -26,4 +26,4 @@ const NavLink: React.FC<props> = ({ route }) => {
   );
 };
 
-export default NavLink;
+export default React.memo(NavLink);
