@@ -36,7 +36,7 @@ const Footer = () => {
               <Link href={'/contact'}>
                 <span className="px-2 border-l cursor-pointer transition-opacity opacity-80  hover:opacity-100">Kontakt</span>
               </Link>
-              <Link href="https://mcusercontent.com/37d42ea39057bd19a6e145ae5/files/8d8153e7-032e-2b1c-a38f-3e2550060d9f/PP.pdf">
+              <Link href="https://mcusercontent.com/37d42ea39057bd19a6e145ae5/files/d6108eb2-80d1-5e1e-ec65-302b0e9d2797/pp.pdf">
                 <span className="px-2 border-l cursor-pointer transition-opacity opacity-80  hover:opacity-100">Polityka prywatności</span>
               </Link>
             </nav>
