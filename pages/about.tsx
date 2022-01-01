@@ -13,13 +13,13 @@ const team = [
   {
     name: 'Teodor Wolski',
     role: 'Front-end developer & Leader',
-    description: 'Talk is cheap',
+    description: 'Piszę kod i gram na gitarze.',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
     socials: {
       github: 'https://github.com/TeodorWolski',
       twitter: null,
-      facebook: 'https://www.facebook.com/profile.php?id=100009876557188',
-      instagram: 'https://www.instagram.com/wolskiteodor/',
+      facebook: null,
+      instagram: null,
       mail: 'teodorwolski88@protonmail.com'
     }
   },
