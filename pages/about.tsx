@@ -13,7 +13,7 @@ const team = [
   {
     name: 'Teodor Wolski',
     role: 'Front-end developer & Leader',
-    description: 'Piszę kod i gram na gitarze.',
+    description: 'Piszę kod i gram na gitarze, start-upy są fajne 🦄',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
     socials: {
       github: 'https://github.com/TeodorWolski',
