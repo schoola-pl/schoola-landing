@@ -11,11 +11,6 @@ const socials = [
       'Instagram to podstawa naszej społeczności. Trzy razy w tygodniu możesz zobaczyć tam posty o tematyce około szkolnej oraz relacje dot. rozwoju.',
     icon: Instagram
   },
-  // {
-  //   link: 'https://www.facebook.com/',
-  //   description: "Wszystkie aktualności, a także ankiety i wiele więcej - znajdziesz właśnie na Facebook'u. Zapraszamy do obserwacji profilu!",
-  //   icon: Facebook
-  // },
   {
     link: 'https://www.medium.com/@schoolapl',
     description: 'Jesteś ambitną osobą? Chcesz wiele osiągnąć w życiu? Zapraszamy na naszego bloga, gdzie poruszamy głębiej temat szkoły.',
