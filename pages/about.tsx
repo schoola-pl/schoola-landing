@@ -27,7 +27,7 @@ const team = [
     name: 'Jakub Michał Fedoszczak',
     role: 'Front-end developer',
     description:
-      'Nastoletni pasjonata programowania, bezpieczeństwa w sieci i samorozwoju. Rozwijający się również w kierunku biznesu, zarządzania oraz automatyzacji.',
+      'Nastoletni pasjonat programowania, bezpieczeństwa w sieci i samorozwoju. Rozwijający się również w kierunku biznesu, zarządzania oraz automatyzacji.',
     img: 'https://avatars.githubusercontent.com/u/77537823?v=4',
     socials: {
       github: 'https://github.com/JakubLog',
