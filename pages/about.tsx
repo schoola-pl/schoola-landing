@@ -7,6 +7,7 @@ import Facebook from 'public/icons/Facebook.svg';
 import Instagram from 'public/icons/Instagram.svg';
 import GitHub from 'public/icons/GitHub.svg';
 import Twitter from 'public/icons/Twitter.svg';
+import Website from 'public/icons/Website.svg';
 import TeamImage from 'public/img/team.png';
 
 const team = [
@@ -20,6 +21,7 @@ const team = [
       twitter: null,
       facebook: null,
       instagram: null,
+      website: null,
       mail: 'teodorwolski88@protonmail.com'
     }
   },
@@ -34,6 +36,7 @@ const team = [
       twitter: 'https://twitter.com/JFedoszczak',
       facebook: 'https://www.facebook.com/jakublogg',
       instagram: 'https://www.instagram.com/jakub_fedoszczak__/',
+      website: 'https://fedoszczak.ovh/',
       mail: 'kontakt.jakubfedoszczak@gmail.com'
     }
   },
@@ -48,6 +51,7 @@ const team = [
       twitter: null,
       facebook: 'https://www.facebook.com/Kubajunak.JJ',
       instagram: 'https://www.instagram.com/kuba__junak/',
+      website: null,
       mail: 'kubajunak@gmail.com'
     }
   },
@@ -62,6 +66,7 @@ const team = [
       twitter: null,
       facebook: 'https://www.facebook.com/daniel.novyk.1',
       instagram: 'https://www.instagram.com/daniel_zz_/',
+      website: null,
       mail: 'danielnovyk.schoola@gmail.com'
     }
   },
@@ -75,6 +80,7 @@ const team = [
       twitter: null,
       facebook: 'https://www.facebook.com/veronica.latala.1',
       instagram: null,
+      website: null,
       mail: 'w.m.latala@gmail.com'
     }
   }
@@ -171,6 +177,13 @@ const about = () => {
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
                       <a href={person.socials.github} target="_blank" rel="noopener noreferrer">
                         <Image src={GitHub} />
+                      </a>
+                    </span>
+                  )}
+                  {person.socials.website && (
+                    <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
+                      <a href={person.socials.website} target="_blank" rel="noopener noreferrer">
+                        <Image src={Website} />
                       </a>
                     </span>
                   )}
