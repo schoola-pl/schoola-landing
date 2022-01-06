@@ -123,8 +123,8 @@ const about = () => {
           <article>
             <p className="px-5 my-3 md:py-8 md:px-8 md:mt-6 text-justify md:leading-relaxed md:bg-white md:mr-10 md:border-emerald-dark md:border-l-4 text-lg relative z-10">
               O dziwo nie jesteśmy z jednej szkoły, ani z jednego miasta! Mówiąc językiem buzzwordów jesteśmy międzynarodowym teamem, ale na szczęście
-              go nie używamy (chyba 😅). Weronika studiuje w Tilburgu w Holandii, Kuba mieszka w jakimś zadupiu pod Wrocławiem, a Teodor, Kuba i
-              Daniel mieszkają w Słupsku.
+              go nie używamy (chyba). Weronika studiuje w Tilburgu w Holandii, Kuba mieszka w jakimś zadupiu pod Wrocławiem, a Teodor, Kuba i Daniel
+              mieszkają w Słupsku.
             </p>
           </article>
           <div className="opacity-0 absolute left-10 bottom-8  md:opacity-50">
