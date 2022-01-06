@@ -71,7 +71,7 @@ const team = [
     }
   },
   {
-    name: 'Weronika Latala',
+    name: `Weronika Latala`,
     role: 'Marketing Manager',
     description: 'Hej! Mam na imię Weronika. Kocham podróżować, poznawać nowe osoby i kultury!',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
