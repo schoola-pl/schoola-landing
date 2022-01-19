@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Instagram from 'public/icons/IGicon.svg';
 import Medium from 'public/icons/Medium.svg';
-import Facebook from 'public/icons/Facebook.svg';
+import Facebook from 'public/icons/FBicon.svg';
 import TikTok from 'public/icons/TikTok.svg';
 import Image from 'next/image';
 

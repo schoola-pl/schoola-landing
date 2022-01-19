@@ -121,7 +121,6 @@ const about = () => {
             Chcemy razem zmienić świat na lepsze, w tym szkoły<span className="text-emerald-dark">.</span>
           </h2>
           <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left">
-            {' '}
             Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
           </h1>
           <article>
