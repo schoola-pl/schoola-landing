@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import Team from 'public/icons/Team.svg';
 import Sprint from 'public/icons/Sprint.svg';
 import Email from 'public/icons/Email.svg';
@@ -89,6 +90,9 @@ const team = [
 const about = () => {
   return (
     <>
+      <Head>
+        <title>O nas</title>
+      </Head>
       <section className="grid grid-cols-1 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
         <div className="bg-amber-dark pt-20 md:hidden relative">
           <Image layout="responsive" src={TeamImage} alt="Team Image" />

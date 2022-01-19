@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
 import Support from 'public/icons/Support.svg';
 import Image from 'next/image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -76,6 +77,9 @@ const contact = () => {
 
   return (
     <>
+      <Head>
+        <title>Kontakt</title>
+      </Head>
       <div className="flex items-center justify-center p-0 md:p-12 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
         <svg
           width="100%"
