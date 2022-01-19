@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import Instagram from 'public/icons/Instagram.svg';
+import Instagram from 'public/icons/IGicon.svg';
 import Medium from 'public/icons/Medium.svg';
+import Facebook from 'public/icons/Facebook.svg';
+import TikTok from 'public/icons/TikTok.svg';
 import Image from 'next/image';
 
 const socials = [
@@ -15,6 +17,18 @@ const socials = [
     link: 'https://www.medium.com/@schoolapl',
     description: 'Jesteś ambitną osobą? Chcesz wiele osiągnąć w życiu? Zapraszamy na naszego bloga, gdzie poruszamy głębiej temat szkoły.',
     icon: Medium
+  },
+  {
+    link: 'https://www.facebook.com/Schoooola',
+    description:
+      'Na naszym Facebook, poznasz nas bliżej oraz zobaczysz jakie progresy robimy! Będą też tam udostępniane wpisy dotyczące produktywności oraz skutecznej nauki, sprawdź i zobacz!',
+    icon: Facebook
+  },
+  {
+    link: 'https://www.tiktok.com/@schoola__',
+    description:
+      'Na naszym Tik Tok znajdziesz szybkie wskazówki na temat skutecznej nauki oraz technik pamięciowych. Sprawdź czego możesz się nauczyć!',
+    icon: TikTok
   }
 ];
 
