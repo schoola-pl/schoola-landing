@@ -5,7 +5,7 @@ import Layout from '../components/templates/Layout';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as ga from '../helpers/ga';
-import { Head } from 'next/document';
+import Head from 'next/head';
 
 const handlePageViewChange = (url: string) => {
   ga.pageView(url);
