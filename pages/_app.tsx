@@ -5,12 +5,13 @@ import Layout from '../components/templates/Layout';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as ga from '../helpers/ga';
+import { Head } from 'next/document';
 
 const handlePageViewChange = (url: string) => {
   ga.pageView(url);
 };
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const MyApp = ({ Component, pageProps }: AppProps & { Component: { title?: string } }) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -21,9 +22,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   }, [router.events]);
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Head>
+        <title>Schoola{Component?.title ? ` | ${Component.title}` : ''}</title>
+      </Head>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 };
 
