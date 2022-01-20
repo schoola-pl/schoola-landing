@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Head from 'next/head';
 import AppointmentIcon from 'public/icons/AppointmentIcon.svg';
 import LogIntegration from 'public/icons/LogIntegrationIcon.svg';
 import SpottedIcon from 'public/icons/SpottedIcon.svg';
@@ -52,9 +51,6 @@ const app = () => {
 
   return (
     <>
-      <Head>
-        <title>Aplikacja</title>
-      </Head>
       <div className="flex flex-col justify-center items-center mt-20">
         <h1 className="text-5xl text-center font-bold lg:pt-10">
           Poznaj możliwości schoola<span className="text-emerald-dark">.</span>
