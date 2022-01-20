@@ -11,6 +11,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Schoola powstała z myślą o uczniach. Umożliwia zbudowanie zaangażowanej społeczności i zżycie się uczniów ze szkołą. To wszystko sprawia, że coraz chętniej będziesz chodził do szkoły!"
           />
+          <meta property="og:image" content="https://www.schoola.pl/favicon.png" />
           <meta property="og:image:alt" content="Schoola's image" />
           <meta property="og:locale" content="pl_PL" />
           <meta property="og:type" content="website" />
