@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import Team from 'public/icons/Team.svg';
 import Sprint from 'public/icons/Sprint.svg';
 import Email from 'public/icons/Email.svg';
@@ -12,7 +13,7 @@ import TeamImage from 'public/img/team.png';
 
 const team = [
   {
-    name: 'Teodor Wolski',
+    name: `Teodor Wolski`,
     role: 'Front-end developer & Leader',
     description: 'Piszę kod i gram na gitarze, start-upy są fajne 🦄',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
@@ -26,7 +27,7 @@ const team = [
     }
   },
   {
-    name: 'Jakub Michał Fedoszczak',
+    name: `Jakub Michał Fedoszczak`,
     role: 'Front-end developer',
     description:
       'Nastoletni pasjonat programowania, bezpieczeństwa w sieci i samorozwoju. Rozwijający się również w kierunku biznesu, zarządzania oraz automatyzacji.',
@@ -71,7 +72,7 @@ const team = [
     }
   },
   {
-    name: 'Weronika Latala',
+    name: `Weronika Latala`,
     role: 'Marketing Manager',
     description: 'Hej! Mam na imię Weronika. Kocham podróżować, poznawać nowe osoby i kultury!',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
@@ -89,6 +90,9 @@ const team = [
 const about = () => {
   return (
     <>
+      <Head>
+        <title>O nas</title>
+      </Head>
       <section className="grid grid-cols-1 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
         <div className="bg-amber-dark pt-20 md:hidden relative">
           <Image layout="responsive" src={TeamImage} alt="Team Image" />
@@ -117,7 +121,6 @@ const about = () => {
             Chcemy razem zmienić świat na lepsze, w tym szkoły<span className="text-emerald-dark">.</span>
           </h2>
           <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left">
-            {' '}
             Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
           </h1>
           <article>

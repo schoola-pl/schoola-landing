@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import Head from 'next/head';
 import Support from 'public/icons/Support.svg';
 import Image from 'next/image';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Instagram from 'public/icons/Instagram.svg';
 import Medium from 'public/icons/Medium.svg';
+import Facebook from 'public/icons/FBicon.svg';
+import TikTok from 'public/icons/TikTok.svg';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 
@@ -26,7 +29,7 @@ const items = [
   {
     id: 4,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02M94PMPKL-b19d4cc02422-512',
-    text: 'Marketing,Biznes,Szkoła? A może coś innego? Jeżeli masz pytania lub wątpliwości , to pisz śmiało!'
+    text: 'Marketing, Biznes, Szkoła? A może coś innego? Jeżeli masz pytania lub wątpliwości , to pisz śmiało!'
   },
   {
     id: 5,
@@ -76,6 +79,9 @@ const contact = () => {
 
   return (
     <>
+      <Head>
+        <title>Kontakt</title>
+      </Head>
       <div className="flex items-center justify-center p-0 md:p-12 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
         <svg
           width="100%"
@@ -239,11 +245,16 @@ const contact = () => {
               </div>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
-                {/*<a href="#" target="_blank" rel="noreferrer" className="rounded-full bg-blue-default w-10 h-10 flex items-center mx-1 justify-center">*/}
-                {/*  <div className="mx-2 mt-2">*/}
-                {/*    <Image src={Facebook} />*/}
-                {/*  </div>*/}
-                {/*</a>*/}
+                <a
+                  href="https://www.facebook.com/Schoooola"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full bg-blue-default w-10 h-10 flex items-center mx-1 justify-center"
+                >
+                  <div className="mx-2 mt-2">
+                    <Image src={Facebook} />
+                  </div>
+                </a>
                 <a
                   href="https://www.instagram.com/schoola__/"
                   target="_blank"
@@ -262,6 +273,16 @@ const contact = () => {
                 >
                   <div className="mx-2 mt-2">
                     <Image src={Medium} />
+                  </div>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@schoola__"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full  bg-blue-default w-10 h-10 flex items-center mx-1 justify-center"
+                >
+                  <div className="mx-2 mt-2">
+                    <Image src={TikTok} />
                   </div>
                 </a>
               </div>
