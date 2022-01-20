@@ -9,6 +9,7 @@ import GitHub from 'public/icons/GitHub.svg';
 import Twitter from 'public/icons/Twitter.svg';
 import Website from 'public/icons/Website.svg';
 import TeamImage from 'public/img/team.png';
+import { NextPageWithTitle } from '../types/NextPageWithTitle';
 
 const team = [
   {
@@ -86,7 +87,7 @@ const team = [
   }
 ];
 
-const about = () => {
+const about: NextPageWithTitle = () => {
   return (
     <>
       <section className="grid grid-cols-1 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
@@ -195,5 +196,6 @@ const about = () => {
     </>
   );
 };
+about.title = 'O nas';
 
 export default about;

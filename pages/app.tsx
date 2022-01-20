@@ -7,6 +7,7 @@ import FeedIcon from 'public/icons/FeedIcon.svg';
 import MeetNewPeople from 'public/icons/MeetNewPeopleIcon.svg';
 import NewsletterForm from 'components/molecules/NewsletterForm/NewsletterForm';
 import MailchimpSubscribe, { EmailFormFields } from 'react-mailchimp-subscribe';
+import { NextPageWithTitle } from '../types/NextPageWithTitle';
 
 const features = [
   {
@@ -46,7 +47,7 @@ const features = [
   }
 ];
 
-const app = () => {
+const app: NextPageWithTitle = () => {
   const MAILCHIMP_URL = 'https://gmail.us20.list-manage.com/subscribe/post?u=37d42ea39057bd19a6e145ae5&amp;id=fe551fe5a1';
 
   return (
@@ -109,5 +110,6 @@ const app = () => {
     </>
   );
 };
+app.title = 'Aplikacja';
 
 export default app;

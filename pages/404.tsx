@@ -1,8 +1,9 @@
 import React from 'react';
 import ErrorPage from '../components/organisms/ErrorPage/ErrorPage';
 import { useRouter } from 'next/router';
+import { NextPageWithTitle } from '../types/NextPageWithTitle';
 
-const Err404 = () => {
+const Err404: NextPageWithTitle = () => {
   const router = useRouter();
   return (
     <ErrorPage
@@ -16,5 +17,6 @@ const Err404 = () => {
     />
   );
 };
+Err404.title = '404';
 
 export default Err404;

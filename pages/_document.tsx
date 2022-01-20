@@ -6,9 +6,6 @@ class MyDocument extends Document {
       <Html lang="pl">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-          <title>Schoola</title>
-
           <meta name="description" content="Najlepsza aplikacja szkolna dla uczniów do poznawania innych osób, komunikacji i dbania o siebie!" />
           <meta property="og:title" content="Schoola - leczymy szkolnictwo" />
           <meta

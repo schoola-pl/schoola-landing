@@ -1,11 +1,12 @@
 import React from 'react';
 import ErrorPage from '../components/organisms/ErrorPage/ErrorPage';
+import { NextPageWithTitle } from '../types/NextPageWithTitle';
 
 const reloadSite = () => {
   window.location.reload();
 };
 
-const Err500 = () => {
+const Err500: NextPageWithTitle = () => {
   return (
     <ErrorPage
       title={'Coś popsuliśmy!'}
@@ -16,5 +17,6 @@ const Err500 = () => {
     />
   );
 };
+Err500.title = '500';
 
 export default Err500;

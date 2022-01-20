@@ -8,6 +8,7 @@ import Facebook from 'public/icons/FBicon.svg';
 import TikTok from 'public/icons/TikTok.svg';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import { NextPageWithTitle } from '../types/NextPageWithTitle';
 
 const items = [
   {
@@ -45,7 +46,7 @@ interface userTypes {
   message: string;
 }
 
-const contact = () => {
+const contact: NextPageWithTitle = () => {
   const [index, setIndex] = useState(0);
   const [isLoading, setLoadingState] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -289,4 +290,6 @@ const contact = () => {
     </>
   );
 };
+contact.title = 'Kontakt';
+
 export default contact;
