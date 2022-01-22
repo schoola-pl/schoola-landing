@@ -2,12 +2,12 @@ import React from 'react';
 
 const AppIntroductionSection = () => (
   <>
-    <div className="bg-amber-default relative p-12 h-full flex flex-col justify-center text-center">
+    <div className="bg-amber-default relative p-12 lg:px-24 h-full flex flex-col justify-center text-center">
       <h1 className="font-bold text-3xl pt-6 pb-4 text-gray-900 sm:text-4xl md:pb-16 2xl:text-5xl">
         Cała szkoła w jednej aplikacji<span className="text-emerald-dark">.</span>
       </h1>
       <div className="grid col-span-1 grid-rows-3 gap-y-2.5 md:gap-10 place-items-center md:grid-cols-3 md:grid-rows-1 ">
-        <div className="m-1">
+        <div className="m-1 lg:pb-14">
           <div className="flex justify-center items-center m-3">
             <div className="h-28 w-28 overflow-hidden flex justify-center items-center border  border-emerald-dark rounded-full bg-emerald-dark">
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
@@ -23,7 +23,7 @@ const AppIntroductionSection = () => (
             Napotkałeś jakiś problem, nie wiesz co zrobić? Umów się na rozmowę z psychologiem szkolnym, wystarczy tylko 1 kliknięcie!
           </p>
         </div>
-        <div className="">
+        <div className="lg:pb-36">
           <div className="flex justify-center items-center m-3">
             <div className="h-28 w-28 overflow-hidden  border  border-emerald-dark rounded-full bg-emerald-dark">
               <div className="p-2 flex justify-center items-center">
