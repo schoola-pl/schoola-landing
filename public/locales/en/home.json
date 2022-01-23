@@ -1,0 +1,28 @@
+{
+  "main": {
+    "header": "Whole school life in one place!",
+    "text": "The best school application for students to meet other people, communication and to care about themselves!"
+  },
+  "buttons": {
+    "start": "Let's start!",
+    "more": "Read more!",
+    "ebook": "Check our ebook!"
+  },
+  "introduction": {
+    "header": "Whole school in one app",
+    "text-1": "Do you have a problem, but you don't know how to resolve it? Just make an appointment with psychological, you need only one click!",
+    "text-2": "Need to borrow something or want to write anonymous message, which will everyone see? We've created for you spotted & school notice board. PS, teachers don't see it!",
+    "text-3": "With our application, you can meet new people from your school with similar interests!"
+  },
+  "socials": {
+    "header": "Follow us on the internet!",
+    "facebook": "On our facebook page, you will see us & our progress! You will find there entries about productivity, science and more! Check it out now!",
+    "instagram": "Instagram is the foundation of our community. Three times a week you can find there entries about school and productivity.",
+    "tiktok": "On our tiktok account, you will find fast tips about science and school. Click and check it now!",
+    "medium": "Are you ambitious? Do you want to be successful? We introduce you our blog where we explore school topics deeper."
+  },
+  "ebook": {
+    "header": "Receive a free e-book about 10 methods of effective learning!",
+    "text": "Newsletter has been created for ambitious people. Thanks to it, you will receive an e-book about 10 pieces of information and gain that will help you shape yourself professionally."
+  }
+}
