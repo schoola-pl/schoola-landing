@@ -32,6 +32,7 @@ const Navbar: React.FC = () => {
       </header>
       <button
         onClick={toggleMenu}
+        aria-label="Toggle menu"
         className="bg-white rounded-xl p-5 mr-10 md:hidden drop-shadow-sm transition-colors hover:drop-shadow-md hover:text-white hover:bg-emerald-dark"
       >
         <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
