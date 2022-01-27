@@ -1,0 +1,14 @@
+{
+  "errors": {
+    "404": {
+      "title": "We can't find this site...",
+      "description": "But don't worry, there are tons of other things to explore on our site. Go ahead!",
+      "button": "Go to the homepage"
+    },
+    "500": {
+      "title": "Something went wrong!",
+      "description": "Everyone makes mistakes, but please be patient! We are currently working on a bug fix!",
+      "button": "Reload the site!"
+    }
+  }
+}
