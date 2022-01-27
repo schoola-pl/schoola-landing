@@ -1,0 +1,18 @@
+{
+  "hero": {
+    "header": "Pracujemy dla dobra naszych rówieśników",
+    "text": "Młodzi i ambitni - to właśnie nasz zespół. Schoola powstała z myślą o uczniach. Dążymy do tego aby czas spędzony w szkole stawał się przyjemniejszy."
+  },
+  "about": {
+    "header": "Oto nasz niesamowity zespół",
+    "subheader": "Chcemy razem zmienić świat na lepsze, w tym szkoły",
+    "text": "O dziwo nie jesteśmy z jednej szkoły, ani z jednego miasta! Mówiąc językiem buzzwordów jesteśmy międzynarodowym teamem, ale na szczęście go nie używamy (chyba). Weronika studiuje w Tilburgu w Holandii, Kuba mieszka w jakimś zadupiu pod Wrocławiem, a Teodor, Kuba i Daniel mieszkają w Słupsku."
+  },
+  "people": {
+    "tw": "Piszę kod i gram na gitarze, start-upy są fajne.",
+    "jmf": "Nastoletni pasjonat programowania, bezpieczeństwa w sieci i samorozwoju. Rozwijający się również w kierunku biznesu, zarządzania oraz automatyzacji.",
+    "kj": "Niesamowity, ambitny, zabawny, przystojny, i od lat zafascynowany rozwojem osobistym, biznesem, marketingiem, sprzedażą oraz szeroko pojętym high-performance. Codziennie pokonuje samego siebie, by zbliżać się do swoich wielkich celów, pragnień i ambicji.",
+    "dn": "Jestem osobą przedsiębiorczą i ambitną. Od dawna moim celem jest stworzenie dużego biznesu, która daje dużą wartość dla klienta. Codziennie do tego dążę aby to zrealizować.",
+    "wl": "Hej! Mam na imię Weronika. Kocham podróżować, poznawać nowe osoby i kultury!"
+  }
+}
