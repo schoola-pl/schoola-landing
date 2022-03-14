@@ -1,4 +1,0 @@
-schoola-landing:
-  component: 'npm i @sls-next/serverless-component@1.18.0'
-  inputs:
-    domain: 'schoola.pl'
