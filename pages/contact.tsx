@@ -9,32 +9,34 @@ import TikTok from 'public/icons/TikTok.svg';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { NextPageWithTitle } from '../types/NextPageWithTitle';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const items = [
   {
     id: 1,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
-    text: 'Feedback od naszych odbiorców i użytkowników jest najważniejszy, więc śmiało pisz co uważasz!'
+    text: 'tw'
   },
   {
     id: 2,
     image: 'https://avatars.githubusercontent.com/u/77537823?v=4',
-    text: 'Jestem jednym z programistów budujących aplikację. Jeżeli masz pytania, problemy lub jakieś pomysły - pisz śmiało!'
+    text: 'jf'
   },
   {
     id: 3,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LLK163M4-2aabbb6efe96-512',
-    text: 'Siema! Jak masz jakiś problem to napisz do mnie!'
+    text: 'jj'
   },
   {
     id: 4,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02M94PMPKL-b19d4cc02422-512',
-    text: 'Marketing, Biznes, Szkoła? A może coś innego? Jeżeli masz pytania lub wątpliwości , to pisz śmiało!'
+    text: 'dn'
   },
   {
     id: 5,
     image: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
-    text: 'Kto pyta nie błądzi! Jeśli macie jakiekolwiek pytania śmiało piszcie do mnie!'
+    text: 'wl'
   }
 ];
 
@@ -51,6 +53,7 @@ const contact: NextPageWithTitle = () => {
   const [isLoading, setLoadingState] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const { register, handleSubmit, reset } = useForm();
+  const { t } = useTranslation('contact');
 
   useEffect(() => {
     setInterval(() => {
@@ -123,19 +126,17 @@ const contact: NextPageWithTitle = () => {
           </div>
           <div className="md:w-auto md:max-w-none flex flex-col justify-center mt-10 md:mt-0 md:px-32">
             <div className="md:text-5xl text-left lg:text-6xl uppercase font-black text-4xl ">
-              <span className="text-emerald-dark">24/7</span> do twojej dyspozycji<span className="text-emerald-dark">.</span>
+              <span className="text-emerald-dark">24/7</span> {t('main.header')}
+              <span className="text-emerald-dark">.</span>
             </div>
-            <div className="text-justify text-xl mt-4 lg:text-2xl  lg:w-4/6">
-              Naszą działalność prowadzimy w oparciu o realne problemy uczniów, więc jeżeli masz pomysł jak moglibyśmy usprawnić twoje szkolne życie
-              skontaktuj się z nami jak najszybciej!
-            </div>
+            <div className="text-justify text-xl mt-4 lg:text-2xl  lg:w-4/6">{t('main.subheader')}</div>
             <div className="w-full my-5 h-16 mb-20">
               <a href="#contact-form">
                 <button
                   className="w-full shadow-md font-medium py-4 px-6 md:py-2 md:px-4 text-white
                cursor-pointer hover:bg-blue-light bg-blue-default hover:bg-yellow-500 rounded text-lg text-center md:w-48 lg:w-60 lg:py-3"
                 >
-                  Szybki kontakt
+                  {t('button.contact-cta')}
                 </button>
               </a>
             </div>
@@ -155,7 +156,7 @@ const contact: NextPageWithTitle = () => {
                         className="float-left mr-3"
                         src="https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5cf8fb1f994fb7168d0d66fb_quote-intro.svg"
                       />
-                      {items[index].text}
+                      {t(`people.${items[index].text}`)}
                     </div>
                   </div>
                 </div>
@@ -170,7 +171,8 @@ const contact: NextPageWithTitle = () => {
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl bg-white">
             <div className="flex">
               <h1 className="font-bold uppercase text-5xl mb-5">
-                Skontaktuj się z nami<span className="text-emerald-dark">.</span>
+                {t('contact.header')}
+                <span className="text-emerald-dark">.</span>
               </h1>
             </div>
             <form onSubmit={handleSubmit(handleContact)}>
@@ -178,19 +180,19 @@ const contact: NextPageWithTitle = () => {
                 <input
                   className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
                   type="text"
-                  placeholder="Imię*"
+                  placeholder={t('contact.fields.first')}
                   {...register('firstName', { required: true })}
                 />
                 <input
                   className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
                   type="text"
-                  placeholder="Nazwisko*"
+                  placeholder={t('contact.fields.last')}
                   {...register('lastName', { required: true })}
                 />
                 <input
                   className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
                   type="email"
-                  placeholder="Email*"
+                  placeholder={t('contact.fields.email')}
                   {...register('email', {
                     required: true,
                     pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -199,7 +201,7 @@ const contact: NextPageWithTitle = () => {
                 <input
                   className="w-full bg-coolGray-light p-2 rounded-lg focus:outline-none focus:shadow-outline"
                   type="tel"
-                  placeholder="Telefon"
+                  placeholder={t('contact.fields.phone')}
                   {...register('phone', {
                     required: false,
                     pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im
@@ -208,7 +210,7 @@ const contact: NextPageWithTitle = () => {
               </div>
               <div className="my-4">
                 <textarea
-                  placeholder="Treść wiadomości*"
+                  placeholder={t('contact.fields.message')}
                   className="w-full h-32 bg-coolGray-light mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                   {...register('message', { required: true })}
                 ></textarea>
@@ -218,7 +220,7 @@ const contact: NextPageWithTitle = () => {
                   className="uppercase text-sm font-bold tracking-wide bg-blue-default transition-colors text-white text-gray-100 p-3 hover:bg-blue-light rounded-lg w-full
                       focus:outline-none focus:shadow-outline"
                 >
-                  {error ? error : isLoading ? 'Wysyłanie...' : 'Wyślij'}
+                  {error ? error : isLoading ? t('button.sending') : t('button.contact-send')}
                 </button>
               </div>
             </form>
@@ -226,15 +228,15 @@ const contact: NextPageWithTitle = () => {
 
           <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-emerald-dark rounded-2xl">
             <div className="flex flex-col text-white">
-              <h1 className="font-bold uppercase text-4xl my-4">Czekamy na feedback od ciebie!</h1>
-              <p className="text-gray-400">Chętnie odpowiemy na twoje pytania, sugestie, bądź uwagi!</p>
+              <h1 className="font-bold uppercase text-4xl my-4">{t('contact.modal.header')}</h1>
+              <p className="text-gray-400">{t('contact.modal.subheader')}</p>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">
                 <div className="flex flex-col">
                   <i className="fas fa-map-marker-alt pt-2 pr-2" />
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-2xl">Napisz mail'a</h2>
+                  <h2 className="text-2xl">{t('contact.modal.mail-header')}</h2>
                   <p className="text-gray-400">
                     <a href="mailto:schoolacontact@gmail.com">schoolacontact@gmail.com</a>
                   </p>
@@ -291,5 +293,14 @@ const contact: NextPageWithTitle = () => {
   );
 };
 contact.title = 'Kontakt';
+
+// eslint-disable-next-line
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['contact']))
+    }
+  };
+}
 
 export default contact;

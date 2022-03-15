@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className="bg-emerald-dark">
       <div className="max-w-2xl mx-auto text-white py-10">
         <div className="text-center">
-          <h3 className="text-3xl mb-3">Pobierz naszą aplikację szkolną</h3>
+          <h3 className="text-3xl mb-3 px-7">Pobierz naszą aplikację szkolną</h3>
           <p>Poznaj ludzi. Otwórz się, ucz się.</p>
         </div>
         <div className={'flex items-center h-36 justify-center mb-5 mt-1'}>

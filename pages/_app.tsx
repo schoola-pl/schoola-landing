@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as ga from '../helpers/ga';
 import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 
 const handlePageViewChange = (url: string) => {
   ga.pageView(url);
@@ -33,4 +34,4 @@ const MyApp = ({ Component, pageProps }: AppProps & { Component: { title?: strin
   );
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);

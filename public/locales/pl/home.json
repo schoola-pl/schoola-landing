@@ -1,0 +1,28 @@
+{
+  "main": {
+    "header": "Życie szkoły w jednym miejscu!",
+    "text": "Najlepsza aplikacja szkolna dla uczniów do poznawania innych osób, komunikacji i dbania o siebie!"
+  },
+  "buttons": {
+    "start": "Rozpocznijmy!",
+    "more": "Dowiedz się więcej!",
+    "ebook": "Odbierz e-booka!"
+  },
+  "introduction": {
+    "header": "Cała szkoła w jednej aplikacji",
+    "text-1": "Napotkałeś jakiś problem, nie wiesz co zrobić? Umów się na rozmowę z psychologiem szkolnym, wystarczy tylko 1 kliknięcie!",
+    "text-2": "Potrzebujesz pilnie coś pożyczyć, bądź chcesz napisać anonimową wiadomość, którą każdy zobaczy? Skorzystaj ze szkolnej tablicy i spotted. PS, nauczyciele tego nie widzą!",
+    "text-3": "Dzięki naszej aplikacji będziesz mógł zapoznać się ze wszystkimi osobami o podobnych zainteresowaniach w twojej szkole!"
+  },
+  "socials": {
+    "header": "Śledź nas w internecie!",
+    "facebook": "Na naszym Facebook, poznasz nas bliżej oraz zobaczysz jakie progresy robimy! Będą też tam udostępniane wpisy dotyczące produktywności oraz skutecznej nauki, sprawdź i zobacz!",
+    "instagram": "Instagram to podstawa naszej społeczności. Trzy razy w tygodniu możesz zobaczyć tam posty o tematyce około szkolnej oraz relacje dot. rozwoju.",
+    "tiktok": "Na naszym Tik Tok znajdziesz szybkie wskazówki na temat skutecznej nauki oraz technik pamięciowych. Sprawdź czego możesz się nauczyć!",
+    "medium": "Jesteś ambitną osobą? Chcesz wiele osiągnąć w życiu? Zapraszamy na naszego bloga, gdzie poruszamy głębiej temat szkoły."
+  },
+  "ebook": {
+    "header": "Odbierz darmowego e-booka o 10 metodach skutecznego uczenia się!",
+    "text": "Newsletter został stworzony z myślą o ambitnych uczniach. Dzięki niemu odbierzesz e-booka o 10 metodach uczenia się i zyskasz porady, które pomogą Ci ukształtować życie zawodowe."
+  }
+}
