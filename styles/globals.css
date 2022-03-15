@@ -48,21 +48,6 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1efe5;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #5B75A6;
-    border-radius: 2px;
-}
-
 /* .div {
   @apply bg-;
 } */
