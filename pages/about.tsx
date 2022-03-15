@@ -10,14 +10,12 @@ import Twitter from 'public/icons/Twitter.svg';
 import Website from 'public/icons/Website.svg';
 import TeamImage from 'public/img/team.png';
 import { NextPageWithTitle } from '../types/NextPageWithTitle';
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const team = [
   {
     name: `Teodor Wolski`,
     role: 'Front-end developer & Leader',
-    description: 'tw',
+    description: 'Piszę kod i gram na gitarze, start-upy są fajne 🦄',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LNT37JA1-ac5f6d272ad6-512',
     socials: {
       github: 'https://github.com/TeodorWolski',
@@ -31,7 +29,8 @@ const team = [
   {
     name: `Jakub Michał Fedoszczak`,
     role: 'Front-end developer',
-    description: 'jmf',
+    description:
+      'Nastoletni pasjonat programowania, bezpieczeństwa w sieci i samorozwoju. Rozwijający się również w kierunku biznesu, zarządzania oraz automatyzacji.',
     img: 'https://avatars.githubusercontent.com/u/77537823?v=4',
     socials: {
       github: 'https://github.com/JakubLog',
@@ -45,7 +44,8 @@ const team = [
   {
     name: 'Kuba Junak',
     role: 'Marketing & SEO Manager',
-    description: 'kj',
+    description:
+      'Niesamowity, ambitny, zabawny, przystojny, i od lat zafascynowany rozwojem osobistym, biznesem, marketingiem, sprzedażą oraz szeroko pojętym high-performance. Codziennie pokonuje samego siebie, by zbliżać się do swoich wielkich celów, pragnień i ambicji.',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02LLK163M4-2aabbb6efe96-512',
     socials: {
       github: null,
@@ -59,7 +59,8 @@ const team = [
   {
     name: 'Daniel Novyk',
     role: 'Marketing Manager',
-    description: 'dn',
+    description:
+      'Jestem osobą przedsiębiorczą i ambitną. Od dawna moim celem jest stworzenie dużego biznesu, która daje dużą wartość dla klienta. Codziennie do tego dążę aby to zrealizować.',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02M94PMPKL-b19d4cc02422-512',
     socials: {
       github: null,
@@ -73,7 +74,7 @@ const team = [
   {
     name: `Weronika Latala`,
     role: 'Marketing Manager',
-    description: 'wl',
+    description: 'Hej! Mam na imię Weronika. Kocham podróżować, poznawać nowe osoby i kultury!',
     img: 'https://ca.slack-edge.com/T02MFH6TXHN-U02MXNH6V7S-ab868490a5ea-512',
     socials: {
       github: null,
@@ -87,8 +88,6 @@ const team = [
 ];
 
 const about: NextPageWithTitle = () => {
-  const { t } = useTranslation('about');
-
   return (
     <>
       <section className="grid grid-cols-1 relative" style={{ minHeight: 'calc(100vh - 78px)' }}>
@@ -101,9 +100,12 @@ const about: NextPageWithTitle = () => {
               Schoola<span className="text-emerald-dark">.</span> Team
             </h1>
             <p className="font-semibold mb-5 text-lg md:text-xl lg:text-2xl xl:text-3xl text-emerald-dark opacity-80 relative z-10">
-              {t('hero.header')}
+              Pracujemy dla dobra naszych rówieśników
             </p>
-            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 lg:text-lg md:pr-0">{t('hero.text')}</p>
+            <p className="pr-10 text-justify md:text-left relative z-10 md:3/4 lg:w-3/4 xl:w-1/2 lg:text-lg md:pr-0">
+              Młodzi i ambitni - to właśnie nasz zespół. Schoola powstała z myślą o uczniach. Dążymy do tego aby czas spędzony w szkole stawał się
+              przyjemniejszy.
+            </p>
           </div>
           <div className="opacity-0 absolute right-0 bottom-8 md:opacity-50 md:right-52 md:top-52 md:pl-60 xl:right-10">
             <Image src={Sprint} width={700} height={600} alt={'Team SVG'} />
@@ -113,16 +115,16 @@ const about: NextPageWithTitle = () => {
       <section className="w-screen px-4 md:grid md:grid-cols-2 sm:px-6 lg:px-4 py-12 2xl:h-screen bg-amber-light relative">
         <div className="text-center pb-12 md:pl-10">
           <h2 className="text-base font-bold text-indigo-600 md:text-left">
-            {t('about.subheader')}
-            <span className="text-emerald-dark">.</span>
+            Chcemy razem zmienić świat na lepsze, w tym szkoły<span className="text-emerald-dark">.</span>
           </h2>
           <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-gray-900 md:text-left">
-            {t('about.header')}
-            <span className="text-emerald-dark">.</span>
+            Oto nasz niesamowity zespół<span className="text-emerald-dark">.</span>
           </h1>
           <article>
             <p className="px-5 my-3 md:py-8 md:px-8 md:mt-6 text-justify md:leading-relaxed md:bg-white md:mr-10 md:border-emerald-dark md:border-l-4 text-lg relative z-10">
-              {t('about.text')}
+              O dziwo nie jesteśmy z jednej szkoły, ani z jednego miasta! Mówiąc językiem buzzwordów jesteśmy międzynarodowym teamem, ale na szczęście
+              go nie używamy (chyba). Weronika studiuje w Tilburgu w Holandii, Kuba mieszka w jakimś zadupiu pod Wrocławiem, a Teodor, Kuba i Daniel
+              mieszkają w Słupsku.
             </p>
           </article>
           <div className="opacity-0 absolute left-10 bottom-8  md:opacity-50">
@@ -141,7 +143,7 @@ const about: NextPageWithTitle = () => {
               <div className="w-full md:w-3/5 text-left p-4 md:p-4 space-y-2">
                 <p className="text-xl text-gray-700 font-bold">{person.name}</p>
                 <p className="text-base text-gray-400 font-normal">{person.role}</p>
-                <p className="text-sm leading-relaxed text-gray-500 font-normal">{t(`people.${person.description}`)}</p>
+                <p className="text-sm leading-relaxed text-gray-500 font-normal">{person.description}</p>
                 <div className="flex justify-start space-x-2">
                   {person.socials.facebook && (
                     <span tabIndex={1} className="cursor-pointer text-gray-500 opacity-70 transition-opacity hover:opacity-100">
@@ -195,14 +197,5 @@ const about: NextPageWithTitle = () => {
   );
 };
 about.title = 'O nas';
-
-// eslint-disable-next-line
-export async function getStaticProps({ locale }: any) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['about']))
-    }
-  };
-}
 
 export default about;

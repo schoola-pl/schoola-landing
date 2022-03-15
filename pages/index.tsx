@@ -3,7 +3,6 @@ import AppIntroductionSection from '../components/organisms/AppIntroductionSecti
 import NewsletterSection from 'components/organisms/NewsletterSection/NewsletterSection';
 import SocialSection from '../components/organisms/SocialSection/SocialSection';
 import { NextPageWithTitle } from '../types/NextPageWithTitle';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Home: NextPageWithTitle = () => (
   <>
@@ -14,14 +13,5 @@ const Home: NextPageWithTitle = () => (
   </>
 );
 Home.title = 'Strona Główna';
-
-// eslint-disable-next-line
-export async function getStaticProps({ locale }: any) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['home']))
-    }
-  };
-}
 
 export default Home;
