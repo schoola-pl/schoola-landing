@@ -68,3 +68,18 @@ button {
     background-image: url(https://assets-global.website-files.com/5b5a66e9f3166b36708705fa/5dea7a12bb83ab1f13040de5_cx-dots.svg);
     background-repeat: no-repeat
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1efe5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5B75A6;
+    border-radius: 2px;
+}
